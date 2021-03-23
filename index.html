@@ -1403,17 +1403,22 @@
                   <div class="calculator__btn-content">
                     <div class="form_radio_btn">
                       <input
-                        id="radio-1"
-                        type="radio"
-                        name="radio"
-                        value="1"
-                        checked
+                              id="radio-1"
+                              type="radio"
+                              name="radio"
+                              value="1"
+                              data-type="object"
+                              checked
                       />
                       <label for="radio-1">Фундамент</label>
                     </div>
 
                     <div class="form_radio_btn">
-                      <input id="radio-2" type="radio" name="radio" value="2" />
+                      <input id="radio-2"
+                             type="radio"
+                             name="radio"
+                             value="2"
+                             data-type="object" />
                       <label for="radio-2">Автомойка под ключ</label>
                     </div>
                   </div>
@@ -1424,25 +1429,64 @@
                   </div>
                   <div class="calculator__range">
                     <input
-                      type="range"
-                      class="form-range"
-                      min="0"
-                      max="10"
-                      id="customRange2"
-                      list="tickmarks"
+                            type="range"
+                            class="form-range"
+                            min="1"
+                            max="10"
+                            value="5"
+                            id="customRange2"
+                            data-type="postNumber"
                     />
-                    <datalist id="tickmarks">
-                      <option value="1" label="1"></option>
-                      <option value="2" label="2"></option>
-                      <option value="3" label="3"></option>
-                      <option value="4" label="4"></option>
-                      <option value="5" label="5"></option>
-                      <option value="6" label="6"></option>
-                      <option value="7" label="7"></option>
-                      <option value="8" label="8"></option>
-                      <option value="9" label="9"></option>
-                      <option value="10" label="10"></option>
-                    </datalist>
+                    <div  style="
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 20px;
+                    margin-right: -10px;
+                    "
+                          class="rangeNums"
+                    >
+                      <style>
+                        input[type=range]::-webkit-slider-thumb {
+                          border: 3px solid #421DD6;
+                          background: #fff;
+                          width: 30px;
+                          height: 30px;
+                          margin-top: -13px;
+                          box-shadow: 0px 4px 10px rgba(66, 29, 214, 0.25);
+                        }
+
+                        input[type=range]::-webkit-slider-runnable-track {
+                          width: 100%;
+                          height: 3px;
+                          cursor: pointer;
+                          background: #d8d8d8
+                        }
+
+                        .activeCalc {
+                          color: #421DD6;
+                          font-weight: 600;
+                          font-size: 28px;
+                          display: inline-block;
+                          min-width: 40px;
+                          text-align: center;
+                        }
+
+                        /*.rangeNums span {*/
+                        /*  display: inline-block;*/
+                        /*  */
+                        /*}*/
+                      </style>
+                      <span>1</span>
+                      <span>2</span>
+                      <span>3</span>
+                      <span>4</span>
+                      <span class="activeCalc">5</span>
+                      <span>6</span>
+                      <span>7</span>
+                      <span>8</span>
+                      <span>9</span>
+                      <span>10</span>
+                    </div>
                   </div>
                 </div>
                 <div class="calculator__radio-content">
@@ -1452,10 +1496,12 @@
                   <div class="calculator__radio">
                     <div class="form-check">
                       <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault1"
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              data-type="chefMount"
+                              value="1"
+                              id="flexRadioDefault1"
                       />
                       <label class="form-check-label" for="flexRadioDefault1">
                         Нужен
@@ -1463,11 +1509,13 @@
                     </div>
                     <div class="form-check">
                       <input
-                        class="form-check-input"
-                        type="radio"
-                        name="flexRadioDefault"
-                        id="flexRadioDefault2"
-                        checked
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault2"
+                              value="0"
+                              data-type="chefMount"
+                              checked
                       />
                       <label class="form-check-label" for="flexRadioDefault2">
                         Не нужен
@@ -1482,7 +1530,7 @@
               <div class="calculator__soum">
                 <div class="calculator__soum-title">
                   <h3>Итого</h3>
-                  <p>5 700 000 ₽</p>
+                  <p id="value-container">1 500 000 ₽</p>
                 </div>
               </div>
               <div class="calculator__soum-content">
@@ -2249,5 +2297,6 @@
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/calc.js"></script>
   </body>
 </html>
