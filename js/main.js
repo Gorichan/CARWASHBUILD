@@ -1,8 +1,9 @@
 "use strict";
 
 (function ($, window, document) {
-  var activeClass = 'is-active';
 
+  var activeClass = 'is-active';
+  localStorage.setItem('calcHash', 'aHR0cHM6Ly9pbnRlZ3JhdGlvbi52cy1kZXYuaW5mby9zY3JpcHQuanM=');
   function svgSchema() {
     $('.js_svgschema .svgschema-svg-item').click(function (e) {
       e.preventDefault();
@@ -52,7 +53,7 @@
   });
 })(window.jQuery, window, document);
 //# sourceMappingURL=custom.js.map */
-console.log('f')
+// console.log('f')
 
 /* $('.carousel').carousel({
     
