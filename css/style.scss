@@ -916,10 +916,9 @@ section {
     }
     .self_service-btn {
       display: flex;
-      justify-content: center;
+      justify-content: end;
       margin-top: 85px;
       align-items: center;
-      margin-left: 70px;
       .btn-secondary {
         margin: 0 24px;
         color: $White;
