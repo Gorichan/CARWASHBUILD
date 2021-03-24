@@ -98,7 +98,7 @@ section {
         flex-direction: column;
         justify-content: center;
         input {
-          max-width: 292px;
+          width: auto;
           max-height: 50px;
           background: #eef0f4;
           border-radius: 2px;
@@ -110,6 +110,7 @@ section {
       .modal-footer {
         border-top: 0;
         padding: 0;
+        justify-content: center;
         .btn-primary {
           width: 100%;
           height: 53px;
@@ -241,29 +242,29 @@ section {
 
         &::after {
           content: url(../img/svg/arrow.svg);
-          margin-left: 24px; 
+          margin-left: 24px;
           display: inline-block;
-          
         }
-        &:hover, ::after{
-          
-            margin-left: 15px;
-          
-
+        &:hover,
+        ::after {
+          margin-left: 15px;
         }
       }
     }
   }
   .header__content-img {
     margin-top: 45px;
+    min-height: 500px;
+    overflow: visible;
+    min-width: 546px;
     img {
-      width: 545px;
+      width: 100%;
       height: 481px;
+      margin-left: 70px;
     }
   }
 }
 .header__sub {
-  margin-top: 65px;
   .header__sub-box {
     margin-top: 14px;
     margin-bottom: 95px;
@@ -713,8 +714,8 @@ section {
           }
 
           .svgschema-circle {
-            fill: $White;
-            stroke: $Blue;
+            fill: #fff;
+            stroke: #421dd6;
           }
 
           .svgschema-circle-active {
@@ -722,72 +723,87 @@ section {
           }
 
           path {
-            fill: $Black;
+            fill: #000;
           }
 
           &.is-active {
-            .svgschema-circle {
-              fill: $Blue;
-              stroke: $Blue;
-              fill-opacity: 1;
-            }
+            @media (min-width: 768px) {
+              .svgschema-circle {
+                fill: #421dd6;
+                stroke: #421dd6;
+                fill-opacity: 1;
+              }
 
-            path {
-              fill: $White;
-            }
+              path {
+                fill: #fff;
+              }
 
-            .svgschema-circle-active {
-              opacity: 1;
+              .svgschema-circle-active {
+                opacity: 1;
+              }
             }
           }
         }
       }
 
-      &-tooltip {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        padding: 7px 20px;
-        font-size: 16px;
-        letter-spacing: 0.02em;
-        border-left: 3px solid $Blue;
-        border-radius: 2px;
-        font-weight: 600;
-        font-size: 14px;
-        color: $Black;
-        background: $White;
-        box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.15);
+      &-tooltips {
+        display: flex;
+        flex-direction: column;
       }
-      &-tooltip-mob-box {
-        display: none;
-        .tooltip-mob-content {
-          width: 100%;
-          p {
-            display: flex;
-            align-items: stretch;
-            background: $White;
-            &:last-child {
-              margin-bottom: 0;
-            }
-            .content-txt {
-              margin-right: 16px;
-              display: flex;
-              width: 30px;
-              min-height: 100%;
-              align-items: center;
-              background: #421dd6;
-              font-weight: 900;
-              color: #ffffff;
-              padding: 11px 10px;
-            }
-            .mob-content-txt {
-              padding: 10px;
-              align-items: center;
-              font-weight: 500;
-              font-size: 14px;
-              color: $Black;
-            }
+
+      &-tooltip {
+        position: relative;
+        max-width: 400px;
+        padding: 10px 20px;
+        padding-left: 45px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        color: $Black;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        border-left: 3px solid #421dd6;
+        border-radius: 2px;
+        background: #ffffff;
+        overflow: hidden;
+        box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.15);
+        P{
+          margin: 0;
+          max-width: 220px;
+          font-size: 16px;
+        }
+
+        @media (min-width: 768px) {
+          padding-left: 20px;
+          display: none;
+        }
+
+        &:before {
+          content: attr(data-id);
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          font-weight: 900;
+          width: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background: #421dd6;
+          color: #fff;
+
+          @media (min-width: 768px) {
+            display: none;
           }
+        }
+
+        &.is-active {
+          display: block;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
         }
       }
     }
@@ -795,7 +811,8 @@ section {
       position: relative;
       color: $Black;
       margin-top: 206px;
-      margin-left: 150px;
+      margin-left: 70px;
+      width: 430px;
       p {
         span {
           font-weight: 600;
@@ -1411,8 +1428,36 @@ section {
       }
     }
     .calculator__range {
-      input {
+      input[type="range"]::-webkit-slider-thumb {
         width: 100%;
+        border: 3px solid #421dd6;
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        margin-top: -13px;
+        box-shadow: 0px 4px 10px rgba(66, 29, 214, 0.25);
+      }
+
+      input[type="range"]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 3px;
+        cursor: pointer;
+        background: #d8d8d8;
+      }
+
+      .activeCalc {
+        color: #421dd6;
+        font-weight: 600;
+        font-size: 28px;
+        display: inline-block;
+        min-width: 40px;
+        text-align: center;
+      }
+      .rangeNums {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        margin-right: -10px;
       }
     }
   }

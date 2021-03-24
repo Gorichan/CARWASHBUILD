@@ -3,74 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Изготавливаем металлические каркасы, производим оборудование для автомоек"
+    />
     <link rel="stylesheet" href="css/index.css" />
-    <title>ARTVILL</title>
+    <link rel="icon" href="img/favicon.svg" type="image/x-icon" />
+    <title>
+      Строим некапитальные автомойки самообслуживания на сборно-разборном
+      фундаменте - CarWashBuild
+    </title>
   </head>
   <body>
     <div class="wrapper-page">
-     
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Заполните форму
+              </h5>
+              <p>Наш менеджер перезвонит вам в&nbsp;течении 15&nbsp;минут</p>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <input type="text" name="name" id="" placeholder="Имя" />
+              <input
+                type="tel"
+                name="tel"
+                id=""
+                placeholder="+7 (---) --- -- --"
+              />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">
+                Получить цену
+              </button>
+              <p>
+                Нажимая на&nbsp;кнопку вы даёте свое согласие <br />
+                на&nbsp;обработку <a href="#">персональных данных</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal-application -->
+      <div
+        class="modal fade"
+        id="exampleModal-application"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel-application">
+                Оставте заявку
+              </h5>
+              <p>И получите лучшую цену</p>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <input type="text" name="name" id="" placeholder="Имя" />
+              <input
+                type="tel"
+                name="tel"
+                id=""
+                placeholder="+7 (---) --- -- --"
+              />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">
+                Получить цену
+              </button>
+              <p>
+                Нажимая на&nbsp;кнопку вы даёте свое согласие <br />
+                на&nbsp;обработку <a href="#">персональных данных</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal-success -->
+      <div
+        class="modal modal-success fade"
+        id="exampleModal-success"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="img/svg/exampleModal-success.svg" alt="" />
+              <h5 class="modal-title success" id="exampleModalLabel-success">
+                Заявка успешно отправлена!
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Заполните форму</h5>
-        <p>Наш менеджер перехвонит вам в течении 15 минут</p>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Понятно!</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        <input type="text" name="name" id="" placeholder="Имя">
-        <input type="tel" name="tel" id="" placeholder="+7 (---) --- -- --">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Получить цену</button>
-        <p>Нажимая на кнопку вы даёте свое согласие <br> на обработку <a href="#">персональных данных</a> </p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal-application -->
-<div class="modal fade" id="exampleModal-application" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel-application">Оставте заявку </h5>
-        <p>И получите лучшую цену</p>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <input type="text" name="name" id="" placeholder="Имя">
-        <input type="tel" name="tel" id="" placeholder="+7 (---) --- -- --">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Получить цену</button>
-        <p>Нажимая на кнопку вы даёте свое согласие <br> на обработку <a href="#">персональных данных</a> </p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal-success -->
-<div class="modal modal-success fade" id="exampleModal-success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <img src="img/svg/exampleModal-success.svg" alt="">
-        <h5 class="modal-title success" id="exampleModalLabel-success">Заявка успешно отправлена! </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Понятно!</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
 
       <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid  ">
+          <div class="container-fluid">
             <a class="navbar-brand" href="#"
               ><img src="img/svg/logo.svg" alt=""
             /></a>
@@ -83,23 +147,22 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-            <span></span>
-            <span></span>
-            <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-            <img src="img/svg/cross.svg" alt="">
-              
-            </button>
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="img/svg/cross.svg" alt="" />
+              </button>
               <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Фундамент</a>
@@ -119,7 +182,12 @@
               </ul>
               <form class="d-flex align-center justify-content-center">
                 <a href="tel:79258999298">+7 925 899-92-98</a>
-                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button
+                  type="button"
+                  class="btn btn-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
                   Заказать звонок
                 </button>
               </form>
@@ -132,8 +200,9 @@
               <div class="col-lg-7 col-sm-12">
                 <div class="heaedr__title">
                   <h1>
-                    Строим некапитальные <br> автомойки самообслуживания <br> на
-                    сборно-разборном фундаменте
+                    Строим некапитальные <br />
+                    автомойки самообслуживания <br />
+                    на сборно-разборном фундаменте
                   </h1>
                   <p>
                     Изготавливаем металлические каркасы, производим оборудование
@@ -143,8 +212,8 @@
                     <button
                       type="button"
                       class="btn btn-secondary"
-                      
-                      data-bs-toggle="modal" data-bs-target="#exampleModal"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
                     >
                       Получить консультацию
                     </button>
@@ -166,25 +235,37 @@
               <div class="col-lg-3">
                 <div class="header__sub-box">
                   <span>400</span>
-                  <p>Постов самообслуживания <br> установили на сегодня</p>
+                  <p>
+                    Постов самообслуживания <br />
+                    установили на сегодня
+                  </p>
                 </div>
               </div>
               <div class="col-lg-3">
                 <div class="header__sub-box">
                   <span>15</span>
-                  <p>Комплектов <br> фундамента произвели</p>
+                  <p>
+                    Комплектов <br />
+                    фундамента произвели
+                  </p>
                 </div>
               </div>
               <div class="col-lg-3">
                 <div class="header__sub-box">
                   <span>150 т</span>
-                  <p>Металлоконструкций <br>  произвели</p>
+                  <p>
+                    Металлоконструкций <br />
+                    произвели
+                  </p>
                 </div>
               </div>
               <div class="col-lg-3">
                 <div class="header__sub-box">
                   <span>6 лет</span>
-                  <p>Строим красивые и надежные <br> мойки самообслуживания</p>
+                  <p>
+                    Строим красивые и надежные <br />
+                    мойки самообслуживания
+                  </p>
                 </div>
               </div>
             </div>
@@ -193,19 +274,21 @@
       </header>
       <!-- header -->
       <section class="section-info">
-        <img class="info__bg" src="img/info-bg.png" alt="info">
+        <img class="info__bg" src="img/info-bg.png" alt="info" />
         <div class="container">
           <div class="row">
             <div class="col-lg-8 order-2 order-sm-2 order-lg-1 m-auto">
               <div class="info__text">
                 <p>
-                  Сборно-разборный фундамент является <br> полноценной заменой
-                  заливного <br> фундамента, и признаком временного <br> сооружения, это
-                  не требует разрешения <br> гос. органов на строительство.
+                  Сборно-разборный фундамент является <br />
+                  полноценной заменой заливного <br />
+                  фундамента, и признаком временного <br />
+                  сооружения, это не требует разрешения <br />
+                  гос. органов на строительство.
                 </p>
               </div>
             </div>
-            <div class="col-lg-4   order-1 order-sm-1 order-lg-2">
+            <div class="col-lg-4 order-1 order-sm-1 order-lg-2">
               <div class="info__box">
                 <div class="layers">
                   <div class="layer layer-1">
@@ -302,7 +385,10 @@
               <div class="col-lg-1 vertical-line"></div>
               <div class="col-lg-3 p-0">
                 <div class="sub__info-title">
-                  <h2>Дополнительные услуги <br> и комплектующие</h2>
+                  <h2>
+                    Дополнительные услуги <br />
+                    и комплектующие
+                  </h2>
                   <img src="img/sub-info-img3.png" alt="" />
                 </div>
                 <div class="sub__info-text">
@@ -346,7 +432,10 @@
                 <h2>Сборно-разборный фундамент</h2>
                 <p>Гарантия 2 года, срок службы 15 лет</p>
                 <div class="foundation__content">
-                  <h3>Выгода в сравнении с заливным <br> фундаментом</h3>
+                  <h3>
+                    Выгода в сравнении с заливным <br />
+                    фундаментом
+                  </h3>
                   <div class="foundation__content-list">
                     <ul>
                       <li>
@@ -372,9 +461,9 @@
               </div>
             </div>
             <div class="col-lg-5">
-              <div class="foundation__img">
-                <div class="svgschema js_svgschema">
-                  <img src="./img/img-schema-min.png" alt="Foot" />
+              <div class="foundation__img js_svgschema">
+                <div class="svgschema">
+                  <img src="img/img-schema-min.png" alt="Foot" />
 
                   <svg
                     class="svgschema-svg"
@@ -382,10 +471,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g
-                      class="svgschema-svg-item is-active"
-                      data-text="Уплотненный мелкофракционный песок 25 см2"
-                    >
+                    <g class="svgschema-svg-item is-active" data-target="1">
                       <circle
                         class="svgschema-circle"
                         cx="37"
@@ -404,7 +490,7 @@
                       />
                     </g>
 
-                    <g class="svgschema-svg-item" data-text="Уплотненный гранитный отсев, фракция 5-10 мм 15 см3">
+                    <g class="svgschema-svg-item" data-target="2">
                       <circle
                         class="svgschema-circle"
                         cx="109"
@@ -424,7 +510,7 @@
                       />
                     </g>
 
-                    <g class="svgschema-svg-item" data-text="Утеплитель пеноплексфундамент 50 мм4">
+                    <g class="svgschema-svg-item" data-target="3">
                       <circle
                         class="svgschema-circle"
                         cx="173"
@@ -444,7 +530,7 @@
                       />
                     </g>
 
-                    <g class="svgschema-svg-item" data-text="Арматура d-12 в 4 слоя">
+                    <g class="svgschema-svg-item" data-target="4">
                       <circle
                         class="svgschema-circle"
                         cx="248"
@@ -464,7 +550,7 @@
                       />
                     </g>
 
-                    <g class="svgschema-svg-item" data-text="Трубы тёплого пола Rehau-20-2">
+                    <g class="svgschema-svg-item" data-target="5">
                       <circle
                         class="svgschema-circle"
                         cx="305"
@@ -484,7 +570,7 @@
                       />
                     </g>
 
-                    <g class="svgschema-svg-item" data-text="Система противозамеразния AntiFrost">
+                    <g class="svgschema-svg-item" data-target="6">
                       <circle
                         class="svgschema-circle"
                         cx="357"
@@ -504,27 +590,50 @@
                       />
                     </g>
                   </svg>
-
-                  <div class="svgschema-tooltip">
-                    Уплотненный мелкофракционный  песок 25 см<sup>2</sup> 
+                </div>
+                <div class="svgschema-tooltips">
+                  <div class="svgschema-tooltip is-active" data-id="1">
+                    <p>Уплотненный мелкофракционный песок 25 см<sup>2</sup></p>
+                    
                   </div>
-                  <div class="svgschema-tooltip-mob-box">
-                    <div class="tooltip-mob-content">
-                      <p><span class="content-txt">1</span> <span class="mob-content-txt">Уплотненный <br>  мелкофракционный <br>  песок 25 см<sup>2</sup></span> </p>
-                      <p><span class="content-txt">2</span><span class="mob-content-txt">Уплотненный гранитный <br>  отсев, фракция 5-10 мм 15 см<sup>3</sup></span></p>
-                      <p><span class="content-txt">3</span><span class="mob-content-txt">Утеплитель <br>  пеноплексфундамент 50 мм<sup>4</sup></span></p>
-                      <p><span class="content-txt">4</span><span class="mob-content-txt">Арматура  d-12 в 4 слоя</span></p>
-                      <p><span class="content-txt">5</span><span class="mob-content-txt">Трубы тёплого пола <br>  Rehau-20-2</span></p>
-                      <p><span class="content-txt">6</span><span class="mob-content-txt">Система противозамеразния <br>  AntiFrost</span></p>
-                    </div>
+
+                  <div class="svgschema-tooltip" data-id="2">
+                    <p>Уплотненный гранитный отсев, фракция 5-10 мм 15 см<sup
+                      >3</sup
+                    ></p>
+                    
+                  </div>
+
+                  <div class="svgschema-tooltip" data-id="3">
+                    <p>Утеплитель пеноплексфундамент 50 мм<sup>4</sup></p>
+                    
+                  </div>
+
+                  <div class="svgschema-tooltip" data-id="4">
+                    <p>Арматура d-12 в 4 слоя</p>
+                    
+                  </div>
+
+                  <div class="svgschema-tooltip" data-id="5">
+                    <p>Трубы тёплого пола Rehau-20-2</p>
+                    
+                  </div>
+
+                  <div class="svgschema-tooltip" data-id="6">
+                    <p>Система противозамеразния AntiFrost</p>
                     
                   </div>
                 </div>
                 <div class="foundation__img-txt">
                   <p>
-                    <b>Сборно-разборный фундамент быстро <br> изготавливается, просто устанавливается.</b> <br>
-                    А автомойку с таким фундаментом можно <br> легко переместить на
-                    другое место, не <br> нарушив её целостность и общий  конструктив.
+                    <b
+                      >Сборно-разборный фундамент быстро <br />
+                      изготавливается, просто устанавливается.</b
+                    >
+                    <br />
+                    А автомойку с таким фундаментом можно <br />
+                    легко переместить на другое место, не <br />
+                    нарушив её целостность и общий конструктив.
                   </p>
                 </div>
               </div>
@@ -534,7 +643,8 @@
                 <button
                   type="button"
                   class="btn btn-secondary"
-                  data-bs-toggle="modal" data-bs-target="#exampleModal-application"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal-application"
                 >
                   Рассчитать стоимость
                 </button>
@@ -550,14 +660,18 @@
           <div class="row">
             <div class="col-lg-6 order-2 order-sm-2 order-lg-1">
               <div class="self_service-title">
-                <h2>Автомойка <br> самообслуживания <br> под ключ</h2>
+                <h2>
+                  Автомойка <br />
+                  самообслуживания <br />
+                  под ключ
+                </h2>
                 <p>От заказа до первых клиентов 2,5 месяца</p>
               </div>
             </div>
             <div class="col-lg-6 order-1 order-sm-1 order-lg-2">
               <div class="self_service-img">
                 <img
-                  src="img/self_service-img-min.png"
+                  src="img/svg/self_service-img.svg"
                   alt="self_service-img"
                 />
               </div>
@@ -584,7 +698,8 @@
                   <button
                     type="button"
                     class="btn btn-secondary"
-                    data-bs-toggle="modal" data-bs-target="#exampleModal-application"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal-application"
                   >
                     Рассчитать стоимость
                   </button>
@@ -602,7 +717,10 @@
             <div class="col-lg-10">
               <div class="we-sell__title">
                 <div class="Rectangle"></div>
-                <h2>Продаем готовые автомойки <br> с реальным доходом</h2>
+                <h2>
+                  Продаем готовые автомойки <br />
+                  с реальным доходом
+                </h2>
                 <p>Готовый бизнес без потери времени</p>
                 <span>
                   <b>Эти этапы уже пройдены:</b>
@@ -614,548 +732,648 @@
                 </span>
               </div>
             </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="slider">
-              <div
-                id="carouselExampleIndicators"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="0"
-                    class="item1 active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="1"
-                    class="item2"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="2"
-                    class="item3"
-                    aria-label="Slide 3"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="3"
-                    class="item4"
-                    aria-label="Slide 4"
-                  ></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-3">
-                        <div class="card" >
-                          <a  href="#"><div class="card-bg" style="background-image: url(img/slider/slider-img-3-min.png);"></div></a>
-                          
-                          <div class="card-body">
-                            <h5 class="card-title">г. Калуга</h5>
-                            <p class="card-text">
-                              Земля и строение в собственности
-                            </p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2017</p>
-                                <p>15 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a class="def" href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-1"></div>
-                      <div class="col-3">
-                        <div class="card" >
-                          <div class="card-bg" style="background-image: url(img/slider/slider-img-6-min.png);"></div>
-                          <div class="card-body">
-                            <h5 class="card-title">МО, г. Химки</h5>
-                            <p class="card-text">Земля в долгосрочной аренде</p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>6</p>
-                                <p>2017</p>
-                                <p>35 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a class="def" href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-1"></div>
-                      <div class="col-3">
-                        <div class="card" >
-                          <div class="card-bg" style="background-image: url(img/slider/slider-img-1-min.png);"></div>
-                          <div class="card-body">
-                            <h5 class="card-title">МО, г. Железнодорожный</h5>
-                            <p class="card-text">Земля в собственности</p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2015</p>
-                                <p>17 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a  class="def"href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item ">
-                    <div class="row">
-                      <div class="col-3">
-                        <div class="card" >
-                          <a href="#"><div class="card-bg" style="background-image: url(img/slider/slider-img-5-min.png);"></div></a>
-                          
-                          <div class="card-body">
-                            <h5 class="card-title">г. Калуга</h5>
-                            <p class="card-text">
-                              Земля и строение в собственности
-                            </p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2017</p>
-                                <p>15 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a class="def" href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-1"></div>
-                      <div class="col-3">
-                        <div class="card" >
-                          <a href="#"><div class="card-bg" style="background-image: url(img/slider/slider-img-3-min.png);"></div></a>
-                          
-                          <div class="card-body">
-                            <h5 class="card-title">МО, г. Химки</h5>
-                            <p class="card-text">Земля в долгосрочной аренде</p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>6</p>
-                                <p>2017</p>
-                                <p>35 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a class="def" href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-1"></div>
-                      <div class="col-3">
-                        <div class="card" >
-                          <a href="#"><div class="card-bg" style="background-image: url(img/slider/slider-img-2-min.png);"></div></a>
-                          
-                          <div class="card-body">
-                            <h5 class="card-title">МО, г. Железнодорожный</h5>
-                            <p class="card-text">Земля в собственности</p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2015</p>
-                                <p>17 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a class="def" href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item ">
-                    <div class="row">
-                      <div class="col-3">
-                        <div class="card" >
-                          <a href="#"> <div class="card-bg" style="background-image: url(img/slider/slider-img-1-min.png);"></div></a>
-                         
-                          <div class="card-body">
-                            <h5 class="card-title">г. Калуга</h5>
-                            <p class="card-text">
-                              Земля и строение в собственности
-                            </p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2017</p>
-                                <p>15 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a class="def" href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-1"></div>
-                      <div class="col-3">
-                        <div class="card" >
-                          <a href="#"> <div class="card-bg" style="background-image: url(img/slider/slider-img-4-min.png);"></div></a>
-                         
-                          <div class="card-body">
-                            <h5 class="card-title">МО, г. Химки</h5>
-                            <p class="card-text">Земля в долгосрочной аренде</p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>6</p>
-                                <p>2017</p>
-                                <p>35 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a class="def" href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-1"></div>
-                      <div class="col-3">
-                        <div class="card" >
-                          <a href="#"> <div class="card-bg" style="background-image: url(img/slider/slider-img-6-min.png);"></div></a>
-                         
-                          <div class="card-body">
-                            <h5 class="card-title">МО, г. Железнодорожный</h5>
-                            <p class="card-text">Земля в собственности</p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2015</p>
-                                <p>17 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a class="def" href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="prev"
+            <div class="col-lg-12">
+              <div class="slider">
+                <div
+                  id="carouselExampleIndicators"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
                 >
-                  <img src="img/svg/prev.svg" alt="prev" />
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="next"
-                >
-                  <img src="img/svg/next.svg" alt="next" />
-                </button>
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="item1 active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      class="item2"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      class="item3"
+                      aria-label="Slide 3"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="3"
+                      class="item4"
+                      aria-label="Slide 4"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="card">
+                            <a href="#"
+                              ><div
+                                class="card-bg"
+                                style="
+                                  background-image: url(img/slider/slider-img-3-min.png);
+                                "
+                              ></div
+                            ></a>
+
+                            <div class="card-body">
+                              <h5 class="card-title">г. Калуга</h5>
+                              <p class="card-text">
+                                Земля и строение в собственности
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2017</p>
+                                  <p>15 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a class="def" href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                          <div class="card">
+                            <div
+                              class="card-bg"
+                              style="
+                                background-image: url(img/slider/slider-img-6-min.png);
+                              "
+                            ></div>
+                            <div class="card-body">
+                              <h5 class="card-title">МО, г. Химки</h5>
+                              <p class="card-text">
+                                Земля в долгосрочной аренде
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>6</p>
+                                  <p>2017</p>
+                                  <p>35 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a class="def" href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                          <div class="card">
+                            <div
+                              class="card-bg"
+                              style="
+                                background-image: url(img/slider/slider-img-1-min.png);
+                              "
+                            ></div>
+                            <div class="card-body">
+                              <h5 class="card-title">МО, г. Железнодорожный</h5>
+                              <p class="card-text">Земля в собственности</p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2015</p>
+                                  <p>17 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a class="def" href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="card">
+                            <a href="#"
+                              ><div
+                                class="card-bg"
+                                style="
+                                  background-image: url(img/slider/slider-img-5-min.png);
+                                "
+                              ></div
+                            ></a>
+
+                            <div class="card-body">
+                              <h5 class="card-title">г. Калуга</h5>
+                              <p class="card-text">
+                                Земля и строение в собственности
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2017</p>
+                                  <p>15 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a class="def" href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                          <div class="card">
+                            <a href="#"
+                              ><div
+                                class="card-bg"
+                                style="
+                                  background-image: url(img/slider/slider-img-3-min.png);
+                                "
+                              ></div
+                            ></a>
+
+                            <div class="card-body">
+                              <h5 class="card-title">МО, г. Химки</h5>
+                              <p class="card-text">
+                                Земля в долгосрочной аренде
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>6</p>
+                                  <p>2017</p>
+                                  <p>35 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a class="def" href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                          <div class="card">
+                            <a href="#"
+                              ><div
+                                class="card-bg"
+                                style="
+                                  background-image: url(img/slider/slider-img-2-min.png);
+                                "
+                              ></div
+                            ></a>
+
+                            <div class="card-body">
+                              <h5 class="card-title">МО, г. Железнодорожный</h5>
+                              <p class="card-text">Земля в собственности</p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2015</p>
+                                  <p>17 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a class="def" href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="card">
+                            <a href="#">
+                              <div
+                                class="card-bg"
+                                style="
+                                  background-image: url(img/slider/slider-img-1-min.png);
+                                "
+                              ></div
+                            ></a>
+
+                            <div class="card-body">
+                              <h5 class="card-title">г. Калуга</h5>
+                              <p class="card-text">
+                                Земля и строение в собственности
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2017</p>
+                                  <p>15 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a class="def" href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                          <div class="card">
+                            <a href="#">
+                              <div
+                                class="card-bg"
+                                style="
+                                  background-image: url(img/slider/slider-img-4-min.png);
+                                "
+                              ></div
+                            ></a>
+
+                            <div class="card-body">
+                              <h5 class="card-title">МО, г. Химки</h5>
+                              <p class="card-text">
+                                Земля в долгосрочной аренде
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>6</p>
+                                  <p>2017</p>
+                                  <p>35 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a class="def" href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                          <div class="card">
+                            <a href="#">
+                              <div
+                                class="card-bg"
+                                style="
+                                  background-image: url(img/slider/slider-img-6-min.png);
+                                "
+                              ></div
+                            ></a>
+
+                            <div class="card-body">
+                              <h5 class="card-title">МО, г. Железнодорожный</h5>
+                              <p class="card-text">Земля в собственности</p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2015</p>
+                                  <p>17 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a class="def" href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <img src="img/svg/prev.svg" alt="prev" />
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <img src="img/svg/next.svg" alt="next" />
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="slider-mobile">
-              <div
-                id="carouselExampleIndicators3"
-                class="carousel slide"
-                data-bs-ride="carousel"
-                data-bs-touch="true"
-              >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="0"
-                    class="item1 active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="1"
-                    class="item2"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="2"
-                    class="item3"
-                    aria-label="Slide 3"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="3"
-                    class="item4"
-                    aria-label="Slide 4"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="3"
-                    class="item5"
-                    aria-label="Slide 5"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators3"
-                    data-bs-slide-to="3"
-                    class="item6"
-                    aria-label="Slide 6"
-                  ></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="card">
-                          <div class="card-bg" style="background-image: url(img/slider/slider-img-3-min.png);"></div>
-                          <div class="card-body">
-                            <h5 class="card-title">г. Калуга</h5>
-                            <p class="card-text">
-                              Земля и строение в <br> собственности
-                            </p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2017</p>
-                                <p>15 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a  href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item ">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="card">
-                          <div class="card-bg" style="background-image: url(img/slider/slider-img-3-min.png);"></div>
-                          <div class="card-body">
-                            <h5 class="card-title">г. Калуга</h5>
-                            <p class="card-text">
-                              Земля и строение в <br> собственности
-                            </p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2017</p>
-                                <p>15 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="card">
-                          <div class="card-bg" style="background-image: url(img/slider/slider-img-3-min.png);"></div>
-                          <div class="card-body">
-                            <h5 class="card-title">г. Калуга</h5>
-                            <p class="card-text">
-                              Земля и строение в <br> собственности
-                            </p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2017</p>
-                                <p>15 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="card">
-                          <div class="card-bg" style="background-image: url(img/slider/slider-img-3-min.png);"></div>
-                          <div class="card-body">
-                            <h5 class="card-title">г. Калуга</h5>
-                            <p class="card-text">
-                              Земля и строение в <br> собственности
-                            </p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2017</p>
-                                <p>15 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="card">
-                          <div class="card-bg" style="background-image: url(img/slider/slider-img-3-min.png);"></div>
-                          <div class="card-body">
-                            <h5 class="card-title">г. Калуга</h5>
-                            <p class="card-text">
-                              Земля и строение в <br> собственности
-                            </p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2017</p>
-                                <p>15 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="card">
-                          <div class="card-bg" style="background-image: url(img/slider/slider-img-3-min.png);"></div>
-                          <div class="card-body">
-                            <h5 class="card-title">г. Калуга</h5>
-                            <p class="card-text">
-                              Земля и строение в <br> собственности
-                            </p>
-                            <div class="line"></div>
-                            <div class="card-text-sub">
-                              <div class="card-text-left">
-                                <p>Количество постов</p>
-                                <p>Год постройки</p>
-                                <p>Цена</p>
-                              </div>
-                              <div class="card-text-right">
-                                <p>5</p>
-                                <p>2017</p>
-                                <p>15 000 000 ₽</p>
-                              </div>
-                            </div>
-                            <a href="#">Подробнее</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators3"
-                  data-bs-slide="prev"
+              <div class="slider-mobile">
+                <div
+                  id="carouselExampleIndicators3"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                  data-bs-touch="true"
                 >
-                  <img src="img/svg/prev.svg" alt="prev" />
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators3"
-                  data-bs-slide="next"
-                >
-                  <img src="img/svg/next.svg" alt="next" />
-                </button>
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators3"
+                      data-bs-slide-to="0"
+                      class="item1 active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators3"
+                      data-bs-slide-to="1"
+                      class="item2"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators3"
+                      data-bs-slide-to="2"
+                      class="item3"
+                      aria-label="Slide 3"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators3"
+                      data-bs-slide-to="3"
+                      class="item4"
+                      aria-label="Slide 4"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators3"
+                      data-bs-slide-to="3"
+                      class="item5"
+                      aria-label="Slide 5"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators3"
+                      data-bs-slide-to="3"
+                      class="item6"
+                      aria-label="Slide 6"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="card">
+                            <div
+                              class="card-bg"
+                              style="
+                                background-image: url(img/slider/slider-img-3-min.png);
+                              "
+                            ></div>
+                            <div class="card-body">
+                              <h5 class="card-title">г. Калуга</h5>
+                              <p class="card-text">
+                                Земля и строение в <br />
+                                собственности
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2017</p>
+                                  <p>15 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="card">
+                            <div
+                              class="card-bg"
+                              style="
+                                background-image: url(img/slider/slider-img-3-min.png);
+                              "
+                            ></div>
+                            <div class="card-body">
+                              <h5 class="card-title">г. Калуга</h5>
+                              <p class="card-text">
+                                Земля и строение в <br />
+                                собственности
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2017</p>
+                                  <p>15 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="card">
+                            <div
+                              class="card-bg"
+                              style="
+                                background-image: url(img/slider/slider-img-3-min.png);
+                              "
+                            ></div>
+                            <div class="card-body">
+                              <h5 class="card-title">г. Калуга</h5>
+                              <p class="card-text">
+                                Земля и строение в <br />
+                                собственности
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2017</p>
+                                  <p>15 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="card">
+                            <div
+                              class="card-bg"
+                              style="
+                                background-image: url(img/slider/slider-img-3-min.png);
+                              "
+                            ></div>
+                            <div class="card-body">
+                              <h5 class="card-title">г. Калуга</h5>
+                              <p class="card-text">
+                                Земля и строение в <br />
+                                собственности
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2017</p>
+                                  <p>15 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="card">
+                            <div
+                              class="card-bg"
+                              style="
+                                background-image: url(img/slider/slider-img-3-min.png);
+                              "
+                            ></div>
+                            <div class="card-body">
+                              <h5 class="card-title">г. Калуга</h5>
+                              <p class="card-text">
+                                Земля и строение в <br />
+                                собственности
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2017</p>
+                                  <p>15 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="card">
+                            <div
+                              class="card-bg"
+                              style="
+                                background-image: url(img/slider/slider-img-3-min.png);
+                              "
+                            ></div>
+                            <div class="card-body">
+                              <h5 class="card-title">г. Калуга</h5>
+                              <p class="card-text">
+                                Земля и строение в <br />
+                                собственности
+                              </p>
+                              <div class="line"></div>
+                              <div class="card-text-sub">
+                                <div class="card-text-left">
+                                  <p>Количество постов</p>
+                                  <p>Год постройки</p>
+                                  <p>Цена</p>
+                                </div>
+                                <div class="card-text-right">
+                                  <p>5</p>
+                                  <p>2017</p>
+                                  <p>15 000 000 ₽</p>
+                                </div>
+                              </div>
+                              <a href="#">Подробнее</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide="prev"
+                  >
+                    <img src="img/svg/prev.svg" alt="prev" />
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide="next"
+                  >
+                    <img src="img/svg/next.svg" alt="next" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -1163,11 +1381,11 @@
       </section>
       <!-- /.we-sell -->
       <section class="section-equipment">
-        <img class="equipment-bg" src="img/equipment-bg.png" alt="equipment">
+        <img class="equipment-bg" src="img/equipment-bg.png" alt="equipment" />
         <div class="container">
           <div class="equipment-content">
             <div class="row">
-              <div class="col-lg-6 ">
+              <div class="col-lg-6">
                 <div class="equipment__title">
                   <span></span>
                   <h2>Используемое оборудование</h2>
@@ -1210,7 +1428,8 @@
                   <button
                     type="button"
                     class="btn btn-secondary"
-                    data-bs-toggle="modal" data-bs-target="#exampleModal-application"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal-application"
                   >
                     Получить консультацию
                   </button>
@@ -1239,22 +1458,24 @@
                   <div class="calculator__btn-content">
                     <div class="form_radio_btn">
                       <input
-                              id="radio-1"
-                              type="radio"
-                              name="radio"
-                              value="1"
-                              data-type="object"
-                              checked
+                        id="radio-1"
+                        type="radio"
+                        name="radio"
+                        value="1"
+                        data-type="object"
+                        checked
                       />
                       <label for="radio-1">Фундамент</label>
                     </div>
 
                     <div class="form_radio_btn">
-                      <input id="radio-2"
-                             type="radio"
-                             name="radio"
-                             value="2"
-                             data-type="object" />
+                      <input
+                        id="radio-2"
+                        type="radio"
+                        name="radio"
+                        value="2"
+                        data-type="object"
+                      />
                       <label for="radio-2">Автомойка под ключ</label>
                     </div>
                   </div>
@@ -1265,53 +1486,15 @@
                   </div>
                   <div class="calculator__range">
                     <input
-                            type="range"
-                            class="form-range"
-                            min="1"
-                            max="10"
-                            value="5"
-                            id="customRange2"
-                            data-type="postNumber"
+                      type="range"
+                      class="form-range"
+                      min="1"
+                      max="10"
+                      value="5"
+                      id="customRange2"
+                      data-type="postNumber"
                     />
-                    <div  style="
-                    display: flex;
-                    justify-content: space-between;
-                    font-size: 20px;
-                    margin-right: -10px;
-                    "
-                          class="rangeNums"
-                    >
-                      <style>
-                        input[type=range]::-webkit-slider-thumb {
-                          border: 3px solid #421DD6;
-                          background: #fff;
-                          width: 30px;
-                          height: 30px;
-                          margin-top: -13px;
-                          box-shadow: 0px 4px 10px rgba(66, 29, 214, 0.25);
-                        }
-
-                        input[type=range]::-webkit-slider-runnable-track {
-                          width: 100%;
-                          height: 3px;
-                          cursor: pointer;
-                          background: #d8d8d8
-                        }
-
-                        .activeCalc {
-                          color: #421DD6;
-                          font-weight: 600;
-                          font-size: 28px;
-                          display: inline-block;
-                          min-width: 40px;
-                          text-align: center;
-                        }
-
-                        /*.rangeNums span {*/
-                        /*  display: inline-block;*/
-                        /*  */
-                        /*}*/
-                      </style>
+                    <div class="rangeNums">
                       <span>1</span>
                       <span>2</span>
                       <span>3</span>
@@ -1332,12 +1515,12 @@
                   <div class="calculator__radio">
                     <div class="form-check">
                       <input
-                              class="form-check-input"
-                              type="radio"
-                              name="flexRadioDefault"
-                              data-type="chefMount"
-                              value="1"
-                              id="flexRadioDefault1"
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        data-type="chefMount"
+                        value="1"
+                        id="flexRadioDefault1"
                       />
                       <label class="form-check-label" for="flexRadioDefault1">
                         Нужен
@@ -1345,13 +1528,13 @@
                     </div>
                     <div class="form-check">
                       <input
-                              class="form-check-input"
-                              type="radio"
-                              name="flexRadioDefault"
-                              id="flexRadioDefault2"
-                              value="0"
-                              data-type="chefMount"
-                              checked
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                        value="0"
+                        data-type="chefMount"
+                        checked
                       />
                       <label class="form-check-label" for="flexRadioDefault2">
                         Не нужен
@@ -1393,7 +1576,8 @@
                 <button
                   type="button"
                   class="btn btn-secondary"
-                  data-bs-toggle="modal" data-bs-target="#exampleModal-application"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal-application"
                 >
                   Оставить заявку
                 </button>
@@ -1416,7 +1600,7 @@
                 <img src="img/order-img.png" alt="order-img" />
               </div>
             </div>
-            
+
             <div class="col-lg-5 col-12">
               <div class="order__content">
                 <ul>
@@ -1451,8 +1635,8 @@
                   <li>
                     <div class="dashed"></div>
                     <a href="#"
-                      >Монтаж сборного фундамента, металлических <br> конструкций,
-                      оборудования</a
+                      >Монтаж сборного фундамента, металлических <br />
+                      конструкций, оборудования</a
                     >
                   </li>
                   <li><a href="#">Запуск автомойки</a></li>
@@ -1844,18 +2028,17 @@
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                        
-                          <div class="item-img">
-                            <img
-                              src="img/slider/car__slider1.png"
-                              class="d-block w-100"
-                              alt="..."
-                            />
-                          </div>
-                          <div class="item-text">
-                            <p>Москва</p>
-                            <span>4 поста</span>
-                          </div>
+                      <div class="item-img">
+                        <img
+                          src="img/slider/car__slider1.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="item-text">
+                        <p>Москва</p>
+                        <span>4 поста</span>
+                      </div>
                     </div>
                     <div class="carousel-item">
                       <div class="row">
@@ -1925,7 +2108,6 @@
                         </div>
                       </div>
                     </div>
-                   
                   </div>
                   <button
                     class="carousel-control-prev"
@@ -1970,7 +2152,6 @@
                       data-bs-target="#flush-collapseOne"
                       aria-expanded="false"
                       aria-controls="flush-collapseOne"
-                      
                     >
                       Как понять, подходит ли выбранное место для автомойки?
                     </button>
@@ -1984,8 +2165,9 @@
                     <div class="accordion-body">
                       <p>
                         Требования к автомойке зависят от площади, количества
-                        постов и других параметров. <br> Также, есть критерии
-                        успешности точки. Мы оценим выбранное место или найдем <br>
+                        постов и других параметров. <br />
+                        Также, есть критерии успешности точки. Мы оценим
+                        выбранное место или найдем <br />
                         лучшее. Звоните <b><u>+7 925 899-92-98</u></b>
                       </p>
                     </div>
@@ -2014,8 +2196,9 @@
                     <div class="accordion-body">
                       <p>
                         Требования к автомойке зависят от площади, количества
-                        постов и других параметров. <br> Также, есть критерии
-                        успешности точки. Мы оценим выбранное место или найдем <br>
+                        постов и других параметров. <br />
+                        Также, есть критерии успешности точки. Мы оценим
+                        выбранное место или найдем <br />
                         лучшее. Звоните <b><u>+7 925 899-92-98</u></b>
                       </p>
                     </div>
@@ -2043,8 +2226,9 @@
                     <div class="accordion-body">
                       <p>
                         Требования к автомойке зависят от площади, количества
-                        постов и других параметров. <br> Также, есть критерии
-                        успешности точки. Мы оценим выбранное место или найдем <br>
+                        постов и других параметров. <br />
+                        Также, есть критерии успешности точки. Мы оценим
+                        выбранное место или найдем <br />
                         лучшее. Звоните <b><u>+7 925 899-92-98</u></b>
                       </p>
                     </div>
@@ -2069,28 +2253,49 @@
               <div class="col-lg-7">
                 <div class="specialist__form">
                   <div class="specialist__form-input-box">
-                      <input type="text" name="name" id="" placeholder="Имя">
-                      <input type="tel" name="tel" id="" placeholder="+7 (---) --- -- --">   
+                    <input type="text" name="name" id="" placeholder="Имя" />
+                    <input
+                      type="tel"
+                      name="tel"
+                      id=""
+                      placeholder="+7 (---) --- -- --"
+                    />
                   </div>
                   <div class="specialist__form-textarea">
-                    <textarea class="form-control" placeholder="Ваш вопрос" id="floatingTextarea2" style="height: 100px"></textarea>
-                    
+                    <textarea
+                      class="form-control"
+                      placeholder="Ваш вопрос"
+                      id="floatingTextarea2"
+                      style="height: 100px"
+                    ></textarea>
                   </div>
                   <div class="specialist__form-btn">
-                    <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal-success">Получить цену</button>
-                    <span>Нажимая на кнопку вы даёте свое согласие на обработку <a href="#">персональных данных</a></span>
+                    <button
+                      class="btn btn-primary"
+                      type="submit"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal-success"
+                    >
+                      Получить цену
+                    </button>
+                    <span
+                      >Нажимая на кнопку вы даёте свое согласие на обработку
+                      <a href="#">персональных данных</a></span
+                    >
                   </div>
                 </div>
               </div>
               <div class="col-lg-5">
                 <div class="specialist__img">
-                  <img src="img/specialist-img.png" alt="specialist__img">
+                  <img src="img/specialist-img.png" alt="specialist__img" />
                   <div class="specialist__img-text">
                     <h3>Мартынов Сергей</h3>
                     <p>Консультант</p>
                     <span><span>+7 925 899-92-98</span></span>
-                    
-                    <a href="mailto:carwashbuild@mail.ru">carwashbuild@mail.ru</a>
+
+                    <a href="mailto:carwashbuild@mail.ru"
+                      >carwashbuild@mail.ru</a
+                    >
                   </div>
                 </div>
               </div>
@@ -2105,14 +2310,21 @@
             <div class="col-lg-12 px-3">
               <div class="footer-box">
                 <div class="footer-logo">
-                  <img src="img/svg/logo-footer.svg" alt="footer-logo">
+                  <img src="img/svg/logo-footer.svg" alt="footer-logo" />
                   <div class="footer-logo-sub">
-                     <p>ИНН 1234567890</p>
-                     <p>ОГРН 9876543210 </p>
+                    <p>ИНН 1234567890</p>
+                    <p>ОГРН 9876543210</p>
                   </div>
                 </div>
                 <div class="footer-btn">
-                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать звонок</button>
+                  <button
+                    type="button"
+                    class="btn btn-light"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Заказать звонок
+                  </button>
                   <a href="tel:+79258999298">+7 925 899-92-98</a>
                 </div>
               </div>
@@ -2134,7 +2346,7 @@
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    
+
     <script src="js/calc.js"></script>
   </body>
 </html>

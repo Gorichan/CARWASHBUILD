@@ -8,6 +8,33 @@
       e.preventDefault();
       var $this = $(this);
       var $holder = $this.closest('.js_svgschema');
+      var $tooltipId = $this.data('target');
+      $holder.find('.svgschema-svg-item').removeClass(activeClass);
+      $this.addClass(activeClass);
+      $holder.find("[data-id]").removeClass(activeClass);
+      $holder.find("[data-id=\"".concat($tooltipId, "\"]")).addClass(activeClass);
+    });
+  }
+
+  $(svgSchema);
+})(window.jQuery, window, document);
+
+(function ($, window, document) {
+  $(function () {
+    $('body').css('opacity', 1);
+  });
+})(window.jQuery, window, document);
+
+/* "use strict";
+
+(function ($, window, document) {
+  var activeClass = 'is-active';
+
+  function svgSchema() {
+    $('.js_svgschema .svgschema-svg-item').click(function (e) {
+      e.preventDefault();
+      var $this = $(this);
+      var $holder = $this.closest('.js_svgschema');
       var $tooltip = $holder.find('.svgschema-tooltip');
       var $text = $this.data('text');
       $holder.find('.svgschema-svg-item').removeClass(activeClass);
@@ -24,7 +51,7 @@
     $('body').css('opacity', 1);
   });
 })(window.jQuery, window, document);
-//# sourceMappingURL=custom.js.map
+//# sourceMappingURL=custom.js.map */
 console.log('f')
 
 /* $('.carousel').carousel({
