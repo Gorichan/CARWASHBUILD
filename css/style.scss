@@ -233,6 +233,7 @@ section {
       a {
         font-weight: bold;
         font-size: 16px;
+        margin-right: 24px;
 
         align-items: normal;
         display: flex;
@@ -240,9 +241,15 @@ section {
 
         &::after {
           content: url(../img/svg/arrow.svg);
-          margin-left: 24px;
+          margin-left: 24px; 
           display: inline-block;
-          margin: auto 24px;
+          
+        }
+        &:hover, ::after{
+          
+            margin-left: 15px;
+          
+
         }
       }
     }
@@ -271,6 +278,7 @@ section {
 }
 
 .section-info {
+  padding: 50px 0 90px 0;
   position: relative;
   .info__bg {
     position: absolute;
@@ -487,7 +495,7 @@ section {
     }
   }
   .sub__info {
-    margin-top: 109.98px;
+    margin-top: 50px;
     .sub__info-title {
       display: flex;
       justify-content: center;
@@ -531,7 +539,7 @@ section {
             font-size: 14px;
             border: 1px solid $LGgey;
             border-radius: 50px;
-            margin-right: 25px;
+            margin-right: 10px;
             color: $Black;
           }
           p {
@@ -608,9 +616,10 @@ section {
   }
 }
 .section-foundation {
+  padding: 50px 0 85px 0;
   background: $LBlue;
   .foundation__title {
-    margin-top: 130px;
+    margin-top: 65px;
     position: relative;
     width: 485px;
     span {
@@ -676,7 +685,7 @@ section {
     }
   }
   .foundation__img {
-    margin-top: 100px;
+    margin-top: 65px;
     .svgschema {
       position: relative;
       display: inline-block;
@@ -847,7 +856,7 @@ section {
 
 .section-self_service {
   .self_service-title {
-    margin-top: 109px;
+    margin-top: 60px;
     margin-left: 30px;
     h2 {
       font-weight: bold;
@@ -867,7 +876,7 @@ section {
     margin-top: 60px;
   }
   .self_service-text {
-    margin-top: -75px;
+    margin-top: -100px;
     ul {
       list-style: none;
       li {
@@ -891,6 +900,7 @@ section {
       justify-content: center;
       margin-top: 85px;
       align-items: center;
+      margin-left: 70px;
       .btn-secondary {
         margin: 0 24px;
         color: $White;
@@ -962,7 +972,7 @@ section {
   }
   .slider {
     margin-top: 70px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     .slide {
       .card-img,
       .card-img-top {
@@ -1020,8 +1030,8 @@ section {
         border-radius: 50px;
         button {
           border-radius: 50px;
-          width: 14px;
-          height: 14px;
+          width: 12px;
+          height: 12px;
           background-color: #eaeaea;
           margin: 0 12px;
           border: none;
@@ -1030,6 +1040,8 @@ section {
           }
         }
         button.active {
+          width: 16px;
+          height: 16px;
           background-color: $Blue;
         }
       }
@@ -1081,7 +1093,7 @@ section {
               }
             }
           }
-          a {
+          .def {
             margin-top: 20px;
             color: $Blue;
             font-weight: bold;
@@ -1330,8 +1342,9 @@ section {
   }
 }
 .section-calculator {
+  padding: 0 0 100px 0;
   .calculator__title {
-    margin-bottom: 112px;
+    margin-bottom: 55px;
     h2 {
       color: $Black;
       font-weight: bold;
@@ -1487,10 +1500,11 @@ section {
   }
 }
 .section-order {
+  padding: 50px 0 100px 0;
   background: $LBlue;
   .order__title {
-    margin-top: 40px;
-    margin-bottom: 70px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     h2 {
       font-weight: bold;
       font-size: 34px;
@@ -1606,7 +1620,7 @@ section {
     }
   }
   .car__slider {
-    margin-top: 145px;
+    margin-top: 100px;
 
     .car__slider-title {
       margin-bottom: 50px;
@@ -1650,7 +1664,7 @@ section {
     .carousel-control-next,
     .carousel-control-prev {
       position: absolute;
-      top: -107px;
+      top: -90px;
       bottom: 0;
       z-index: 1;
       display: -ms-flexbox;
@@ -1847,12 +1861,13 @@ section {
 }
 
 .section-specialist {
+  padding: 50px 0 0 0;
   .specialist-box {
     height: 500px;
     position: relative;
     padding: 80px;
     background: $LBlue;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     .specialist__title {
       margin-bottom: 48px;
       h2 {
@@ -2004,7 +2019,7 @@ section {
   }
   .footer-sub {
     .footer-sub-box {
-      border-top: 1px solid #ffffff;
+      border-top: 1px solid #ffffff42;
       padding: 30px 0;
       color: $White;
       display: flex;

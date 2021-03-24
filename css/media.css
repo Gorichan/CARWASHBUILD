@@ -29,9 +29,22 @@
     top: -30%;
     right: -200px;
   }
+  
+}
+@media (max-width: 1255px){
   .header .navbar-light .navbar-nav .nav-link {
-    font-size: 10px;
-  }
+    color: #ffffff;
+    font-weight: 500;
+    margin: 8px 0px;
+}
+}
+@media (min-width: 1000px){
+  .header .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    margin: 25px 0px;
+    font-size: 8px;
+}
 }
 @media (max-width: 988px) {
   .header {

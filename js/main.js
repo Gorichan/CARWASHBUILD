@@ -25,7 +25,7 @@
   });
 })(window.jQuery, window, document);
 //# sourceMappingURL=custom.js.map
-
+console.log('f')
 
 /* $('.carousel').carousel({
     

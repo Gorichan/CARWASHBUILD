@@ -281,6 +281,7 @@ section {
 .header__content .heaedr__title .header__btn a {
   font-weight: bold;
   font-size: 16px;
+  margin-right: 24px;
   -webkit-box-align: normal;
       -ms-flex-align: normal;
           align-items: normal;
@@ -295,7 +296,10 @@ section {
   content: url(../img/svg/arrow.svg);
   margin-left: 24px;
   display: inline-block;
-  margin: auto 24px;
+}
+
+.header__content .heaedr__title .header__btn a:hover, .header__content .heaedr__title .header__btn a ::after {
+  margin-left: 15px;
 }
 
 .header__content .header__content-img {
@@ -326,6 +330,7 @@ section {
 }
 
 .section-info {
+  padding: 50px 0 90px 0;
   position: relative;
 }
 
@@ -683,7 +688,7 @@ section {
 }
 
 .section-info .sub__info {
-  margin-top: 109.98px;
+  margin-top: 50px;
 }
 
 .section-info .sub__info .sub__info-title {
@@ -754,7 +759,7 @@ section {
   font-size: 14px;
   border: 1px solid #d8d8d8;
   border-radius: 50px;
-  margin-right: 25px;
+  margin-right: 10px;
   color: #000000;
 }
 
@@ -842,11 +847,12 @@ section {
 }
 
 .section-foundation {
+  padding: 50px 0 85px 0;
   background: #e6eaf3;
 }
 
 .section-foundation .foundation__title {
-  margin-top: 130px;
+  margin-top: 65px;
   position: relative;
   width: 485px;
 }
@@ -921,7 +927,7 @@ section {
 }
 
 .section-foundation .foundation__img {
-  margin-top: 100px;
+  margin-top: 65px;
 }
 
 .section-foundation .foundation__img .svgschema {
@@ -1122,7 +1128,7 @@ section {
 }
 
 .section-self_service .self_service-title {
-  margin-top: 109px;
+  margin-top: 60px;
   margin-left: 30px;
 }
 
@@ -1144,7 +1150,7 @@ section {
 }
 
 .section-self_service .self_service-text {
-  margin-top: -75px;
+  margin-top: -100px;
 }
 
 .section-self_service .self_service-text ul {
@@ -1179,6 +1185,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 70px;
 }
 
 .section-self_service .self_service-text .self_service-btn .btn-secondary {
@@ -1257,7 +1264,7 @@ section {
 
 .section-we-sell .slider {
   margin-top: 70px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .section-we-sell .slider .slide .card-img,
@@ -1331,8 +1338,8 @@ section {
 
 .section-we-sell .slider .slide .carousel-indicators button {
   border-radius: 50px;
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   background-color: #eaeaea;
   margin: 0 12px;
   border: none;
@@ -1343,6 +1350,8 @@ section {
 }
 
 .section-we-sell .slider .slide .carousel-indicators button.active {
+  width: 16px;
+  height: 16px;
   background-color: #421dd6;
 }
 
@@ -1404,7 +1413,7 @@ section {
   color: #000000;
 }
 
-.section-we-sell .slider .slide .carousel-item .card a {
+.section-we-sell .slider .slide .carousel-item .card .def {
   margin-top: 20px;
   color: #421dd6;
   font-weight: bold;
@@ -1415,11 +1424,11 @@ section {
   display: flex;
 }
 
-.section-we-sell .slider .slide .carousel-item .card a:hover {
+.section-we-sell .slider .slide .carousel-item .card .def:hover {
   color: #6c51d7;
 }
 
-.section-we-sell .slider .slide .carousel-item .card a::after {
+.section-we-sell .slider .slide .carousel-item .card .def::after {
   content: url(../img/svg/arrow-info.svg);
   display: inline-block;
   margin: 2px 24px;
@@ -1684,8 +1693,12 @@ section {
   background: #6c51d7;
 }
 
+.section-calculator {
+  padding: 0 0 100px 0;
+}
+
 .section-calculator .calculator__title {
-  margin-bottom: 112px;
+  margin-bottom: 55px;
 }
 
 .section-calculator .calculator__title h2 {
@@ -1870,12 +1883,13 @@ section {
 }
 
 .section-order {
+  padding: 50px 0 100px 0;
   background: #e6eaf3;
 }
 
 .section-order .order__title {
-  margin-top: 40px;
-  margin-bottom: 70px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .section-order .order__title h2 {
@@ -2025,7 +2039,7 @@ section {
 }
 
 .section-car .car__slider {
-  margin-top: 145px;
+  margin-top: 100px;
 }
 
 .section-car .car__slider .car__slider-title {
@@ -2069,7 +2083,7 @@ section {
 .section-car .car__slider .carousel-control-next,
 .section-car .car__slider .carousel-control-prev {
   position: absolute;
-  top: -107px;
+  top: -90px;
   bottom: 0;
   z-index: 1;
   display: -ms-flexbox;
@@ -2293,12 +2307,16 @@ section {
   color: #000000;
 }
 
+.section-specialist {
+  padding: 50px 0 0 0;
+}
+
 .section-specialist .specialist-box {
   height: 500px;
   position: relative;
   padding: 80px;
   background: #e6eaf3;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .section-specialist .specialist-box .specialist__title {
@@ -2538,7 +2556,7 @@ section {
 }
 
 .section-footer .footer-sub .footer-sub-box {
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #ffffff42;
   padding: 30px 0;
   color: #ffffff;
   display: -webkit-box;
