@@ -1,4 +1,12 @@
-/* @media (max-width: 360px) */
+
+@media (max-width: 360px){
+  .section-info .sub__info .sub__info-text ol li {
+    margin: 22px 0;
+}
+.section-info .sub__info .sub__info-text ul li {
+  margin: 16px 0;
+}
+}
 @media (max-width: 1650px) {
   .section-info .info__bg {
     left: -100px;
@@ -1153,10 +1161,10 @@
     margin-top: -50px;
   }
   .section-info .sub__info .sub__info-text ol li {
-    margin: 22px 60px;
+    margin: 22px 50px;
 }
 .section-info .sub__info .sub__info-text ul li {
-  margin: 16px 60px;
+  margin: 16px 50px;
 }
 .section-info .sub__info .sub__info-title h2 {
   width: 215px;
@@ -1200,7 +1208,7 @@
   .section-foundation .foundation__img .foundation__img-txt {
     margin-top: 56px;
     margin: 56px auto 0 auto;
-    width: 286px;
+    width: 245px;
   }
   .section-foundation .foundation__img .svgschema-tooltip {
     max-width: 100%;
@@ -1549,4 +1557,88 @@
   .section-footer {
     padding: 43px 0 0 0;
   }
+}
+@media (max-width: 360px){
+  .section-info .sub__info .sub__info-text ol li {
+    margin: 22px 0;
+}
+.section-info .sub__info .sub__info-text ul li {
+  margin: 16px 0;
+}
+.section-info .sub__info .sub__info-text .sub__info-btn {
+  min-height: 0;
+  margin-left: 0;
+}
+.section-foundation .foundation__title span {
+  left: -35px;
+  top: 22px;
+  width: 60px;
+}
+.section-we-sell .we-sell__title .Rectangle {
+  left: -91px;
+  width: 140px;
+  top: 65px;
+}
+.section-foundation .foundation__title .foundation__content h3 {
+  margin-left: 17px;
+}
+.section-foundation .foundation__title .foundation__content .foundation__content-list ul li {
+  max-width: 220px;
+}
+.section-foundation .foundation__title .foundation__content .foundation__content-list {
+  margin-left: 17px;
+}
+.section-foundation .foundation__img {
+   margin-top: 10px; 
+}
+.section-foundation {
+  padding: 50px 0 40px 0;
+  background: #e6eaf3;
+}
+.section-self_service {
+  padding: 50px 0 0 0;
+}
+.section-self_service .self_service-img {
+  margin: 20px 0 0 0;
+}
+.section-equipment .equipment-content .equipment-btn .btn-secondary {
+  margin: 10px auto;
+  
+}
+.section-foundation .foundation__img .foundation__img-txt {
+  width: 245px;
+}
+.section-we-sell .slider-mobile .slide .carousel-item .card .card-body .card-text {
+  width: 190px;
+}
+.section-we-sell .slider-mobile .slide .carousel-item .card {
+  min-height: 550px;
+}
+.section-we-sell .slider-mobile .slide .carousel-item .card .card-body .card-text-sub .card-text-right p {
+  font-weight: bold;
+  font-size: 19px;
+  color: rgb(0, 0, 0);
+}
+.section-we-sell .slider-mobile .slide .carousel-control-next, .section-we-sell .slider-mobile .slide .carousel-control-prev {
+  display: none;
+}
+.section-calculator .calculator__btn .calculator__btn-content .form_radio_btn label {
+  height: 54px;
+}
+.section-specialist .specialist-box {
+  height: 796px;
+}
+.section-specialist .specialist-box .specialist__img .specialist__img-text {
+  right: 5%;
+  bottom: 5px;
+}
+.section-car .car__box img {
+  margin-top: -22px;
+}
+.section-car .car__slider-mobile .carousel .carousel-inner .carousel-item .item-text {
+  padding: 15px;
+}
+.section-questions .accordion .accordion-button {
+  text-align: left;
+}
 }
