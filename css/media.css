@@ -1164,6 +1164,7 @@
   .section-foundation .foundation__title {
     margin-top: 0;
     width: 100%;
+    margin-left: 0;
   }
   .section-foundation .foundation__title h2 {
     font-size: 23px;
@@ -1301,12 +1302,15 @@
   .section-we-sell .slider-mobile {
     display: flex;
   }
+  .section-we-sell .slider-mobile .carousel {
+    width: 100%;
+  }
   .section-we-sell .slider-mobile .slide .carousel-indicators button {
     margin: 0 10px;
   }
   .section-we-sell .slider-mobile .slide .carousel-control-next,
   .section-we-sell .slider-mobile .slide .carousel-control-prev {
-    top: 568px;
+    top: 583px;
   }
   .section-we-sell .slider-mobile .slide .carousel-control-prev {
     right: 0;
