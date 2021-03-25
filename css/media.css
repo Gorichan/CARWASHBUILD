@@ -1222,6 +1222,11 @@
     padding: 43px 0 35px 0;
   }
 }
+@media (max-width: 600px){
+  .modal-dialog {
+    width: 100%;
+}
+}
 @media (max-width: 480px) {
   .section-info .sub__info .sub__info-text .mt {
     margin-top: 0;
