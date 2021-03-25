@@ -61,7 +61,7 @@ section {
 #exampleModal-success .success {
   width: auto;
   text-align: center;
-  margin: 50px 0 0 0;
+  margin: 50px 0 50px 0;
 }
 
 .modal {
@@ -80,6 +80,7 @@ section {
 }
 
 .modal .modal-dialog .modal-content .modal-header {
+  padding: 0 1rem;
   border-bottom: none;
 }
 
@@ -102,6 +103,7 @@ section {
 }
 
 .modal .modal-dialog .modal-content .modal-body {
+  padding: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,6 +124,10 @@ section {
   border: none;
   margin: 9.5px 0;
   padding: 14px 24px;
+}
+
+.modal .modal-dialog .modal-content .modal-footer > * {
+  margin: 0;
 }
 
 .modal .modal-dialog .modal-content .modal-footer {
@@ -284,26 +290,24 @@ section {
 .header__content .heaedr__title .header__btn a {
   font-weight: bold;
   font-size: 16px;
-  margin-right: 24px;
   -webkit-box-align: normal;
       -ms-flex-align: normal;
           align-items: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .header__content .heaedr__title .header__btn a::after {
   content: url(../img/svg/arrow.svg);
   margin-left: 24px;
   display: inline-block;
+  -webkit-transition: .25s linear;
+  transition: .25s linear;
 }
 
-.header__content .heaedr__title .header__btn a:hover,
-.header__content .heaedr__title .header__btn a ::after {
-  margin-left: 15px;
+.header__content .heaedr__title .header__btn a:hover::after {
+  margin-left: 10px;
 }
 
 .header__content .header__content-img {
@@ -848,6 +852,12 @@ section {
   content: url(../img/svg/arrow-info.svg);
   display: inline-block;
   margin: 2px 24px;
+  -webkit-transition: .25s linear;
+  transition: .25s linear;
+}
+
+.section-info .sub__info .sub__info-text .sub__info-btn a:hover::after {
+  margin-left: 10px;
 }
 
 .section-foundation {
@@ -1148,11 +1158,16 @@ section {
   content: url(../img/svg/arrow-info.svg);
   display: inline-block;
   margin: 2px 24px;
+  -webkit-transition: .25s linear;
+  transition: .25s linear;
+}
+
+.section-foundation .foundation__btn a:hover::after {
+  margin-left: 10px;
 }
 
 .section-self_service .self_service-title {
   margin-top: 60px;
-  margin-left: 30px;
 }
 
 .section-self_service .self_service-title h2 {
@@ -1177,6 +1192,7 @@ section {
 }
 
 .section-self_service .self_service-text ul {
+  padding-left: 0;
   list-style: none;
 }
 
@@ -1211,7 +1227,6 @@ section {
 }
 
 .section-self_service .self_service-text .self_service-btn .btn-secondary {
-  margin: 0 24px;
   color: #ffffff;
   background: #421dd6;
   border-radius: 4px;
@@ -1243,6 +1258,12 @@ section {
   content: url(../img/svg/arrow-info.svg);
   display: inline-block;
   margin: 2px 24px;
+  -webkit-transition: .25s linear;
+  transition: .25s linear;
+}
+
+.section-self_service .self_service-text .self_service-btn a:hover::after {
+  margin-left: 10px;
 }
 
 .section-we-sell .we-sell__title {
@@ -1454,6 +1475,12 @@ section {
   content: url(../img/svg/arrow-info.svg);
   display: inline-block;
   margin: 2px 24px;
+  -webkit-transition: .25s linear;
+  transition: .25s linear;
+}
+
+.section-we-sell .slider .slide .carousel-item .card .def:hover::after {
+  margin-left: 10px;
 }
 
 .section-we-sell .slider-mobile {
@@ -1625,6 +1652,12 @@ section {
   content: url(../img/svg/arrow-info.svg);
   display: inline-block;
   margin: 2px 24px;
+  -webkit-transition: .25s linear;
+  transition: .25s linear;
+}
+
+.section-we-sell .slider-mobile .slide .carousel-item .card a:hover::after {
+  margin-left: 10px;
 }
 
 .section-equipment {
@@ -2205,6 +2238,8 @@ section {
 
 .section-car .car__slider .carousel-indicators button.active {
   background-color: #421dd6;
+  width: 16px;
+  height: 16px;
 }
 
 .section-car .car__slider-mobile {
@@ -2551,7 +2586,7 @@ section {
 }
 
 .section-footer {
-  padding: 60px 0;
+  padding-top: 60px;
   background: #50586d;
 }
 

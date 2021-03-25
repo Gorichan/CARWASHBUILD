@@ -62,7 +62,7 @@ section {
   .success {
     width: auto;
     text-align: center;
-    margin: 50px 0 0 0;
+    margin: 50px 0 50px 0;
   }
 }
 
@@ -76,6 +76,7 @@ section {
     .modal-content {
       position: relative;
       .modal-header {
+        padding: 0 1rem;
         border-bottom: none;
         p {
           width: 100%;
@@ -94,6 +95,7 @@ section {
         }
       }
       .modal-body {
+        padding: 1rem 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -107,6 +109,9 @@ section {
           padding: 14px 24px;
         }
       }
+      .modal-footer>* {
+        margin: 0;
+    }
       .modal-footer {
         border-top: 0;
         padding: 0;
@@ -234,20 +239,19 @@ section {
       a {
         font-weight: bold;
         font-size: 16px;
-        margin-right: 24px;
-
         align-items: normal;
         display: flex;
-        transition: 0.5s;
+        
 
         &::after {
           content: url(../img/svg/arrow.svg);
           margin-left: 24px;
           display: inline-block;
+          transition: .25s linear;
+          
         }
-        &:hover,
-        ::after {
-          margin-left: 15px;
+        &:hover::after{
+          margin-left: 10px;
         }
       }
     }
@@ -610,6 +614,10 @@ section {
             content: url(../img/svg/arrow-info.svg);
             display: inline-block;
             margin: 2px 24px;
+            transition: .25s linear;
+          }
+          &:hover::after{
+            margin-left: 10px;
           }
         }
       }
@@ -868,6 +876,10 @@ section {
         content: url(../img/svg/arrow-info.svg);
         display: inline-block;
         margin: 2px 24px;
+        transition: .25s linear;
+      }
+      &:hover::after{
+        margin-left: 10px;
       }
     }
   }
@@ -876,7 +888,7 @@ section {
 .section-self_service {
   .self_service-title {
     margin-top: 60px;
-    margin-left: 30px;
+    
     h2 {
       font-weight: bold;
       font-size: 34px;
@@ -897,6 +909,7 @@ section {
   .self_service-text {
     margin-top: -100px;
     ul {
+      padding-left: 0;
       list-style: none;
       li {
         font-weight: 500;
@@ -920,7 +933,7 @@ section {
       margin-top: 85px;
       align-items: center;
       .btn-secondary {
-        margin: 0 24px;
+        
         color: $White;
         background: $Blue;
         border-radius: 4px;
@@ -948,6 +961,10 @@ section {
           content: url(../img/svg/arrow-info.svg);
           display: inline-block;
           margin: 2px 24px;
+          transition: .25s linear;
+        }
+        &:hover::after{
+          margin-left: 10px;
         }
       }
     }
@@ -1127,6 +1144,10 @@ section {
               content: url(../img/svg/arrow-info.svg);
               display: inline-block;
               margin: 2px 24px;
+              transition: .25s linear;
+            }
+            &:hover::after{
+              margin-left: 10px;
             }
           }
         }
@@ -1271,6 +1292,10 @@ section {
               content: url(../img/svg/arrow-info.svg);
               display: inline-block;
               margin: 2px 24px;
+              transition: .25s linear;
+            }
+            &:hover::after{
+              margin-left: 10px;
             }
           }
         }
@@ -1762,6 +1787,8 @@ section {
       }
       button.active {
         background-color: $Blue;
+        width: 16px;
+        height: 16px;
       }
     }
   }
@@ -2026,7 +2053,7 @@ section {
   .container-fluid {
     padding: 0 28px;
   }
-  padding: 60px 0;
+  padding-top: 60px;
   background: #50586d;
   .footer-box {
     display: flex;
