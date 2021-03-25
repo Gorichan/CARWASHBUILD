@@ -26,38 +26,7 @@
   });
 })(window.jQuery, window, document);
 
-/* "use strict";
 
-(function ($, window, document) {
-  var activeClass = 'is-active';
-
-  function svgSchema() {
-    $('.js_svgschema .svgschema-svg-item').click(function (e) {
-      e.preventDefault();
-      var $this = $(this);
-      var $holder = $this.closest('.js_svgschema');
-      var $tooltip = $holder.find('.svgschema-tooltip');
-      var $text = $this.data('text');
-      $holder.find('.svgschema-svg-item').removeClass(activeClass);
-      $this.addClass(activeClass);
-      $tooltip.text($text);
-    });
-  }
-
-  $(svgSchema);
-})(window.jQuery, window, document);
-
-(function ($, window, document) {
-  $(function () {
-    $('body').css('opacity', 1);
-  });
-})(window.jQuery, window, document);
-//# sourceMappingURL=custom.js.map */
-// console.log('f')
-
-/* $('.carousel').carousel({
-    
-  }) */
 
   $(".carousel-control-prev").click(function(){
     $(".carousel").carousel("prev");
@@ -81,6 +50,9 @@
   });
   $(".item5").click(function(){
     $("#carouselExampleIndicators").carousel(4);
+  });
+  $(".item6").click(function(){
+    $("#carouselExampleIndicators").carousel(5);
   });
 
   var myModal = document.getElementById('myModal')

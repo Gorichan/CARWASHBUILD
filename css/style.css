@@ -64,6 +64,10 @@ section {
   margin: 50px 0 50px 0;
 }
 
+.modal-open .modal {
+  overflow-y: hidden;
+}
+
 .modal {
   background: #421dd633;
 }
@@ -72,7 +76,7 @@ section {
   max-width: 500px;
   max-height: 500px;
   padding: 0 54px;
-  margin: 200px auto;
+  margin: 217px auto;
 }
 
 .modal .modal-dialog .modal-content {
@@ -344,7 +348,7 @@ section {
 
 .section-info .info__bg {
   position: absolute;
-  left: 0;
+  left: -30px;
   bottom: -28%;
 }
 
@@ -869,7 +873,7 @@ section {
   margin-top: 65px;
   position: relative;
   width: 485px;
-  margin-left: 46px;
+  /* margin-left: 46px; */
 }
 
 .section-foundation .foundation__title span {

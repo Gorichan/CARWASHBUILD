@@ -12,8 +12,8 @@
 }
 @media (max-width: 1450px) {
   .section-info .info__bg {
-    left: -160px;
-    bottom: 1%;
+    left: -205px;
+    bottom: -1%;
   }
   .section-equipment .equipment-bg {
     position: absolute;
@@ -23,7 +23,7 @@
 }
 @media (max-width: 1300px) {
   .section-info .info__bg {
-    left: -230px;
+    left: -255px;
   }
   .section-equipment .equipment-bg {
     position: absolute;
@@ -39,6 +39,9 @@
   
 }
 @media (max-width: 1255px){
+  .section-info .info__bg {
+    bottom: 2%;
+}
   
   .header .navbar-light .navbar-nav .nav-link {
     color: #ffffff;
@@ -108,6 +111,24 @@
 
 }
 @media (max-width: 1024px){
+  .section-foundation .foundation__img .foundation__img-txt br {
+    display: none;
+}
+  .section-foundation .foundation__img .foundation__img-txt {
+    width: 366px;
+    margin-left: 41px;
+}
+  .section-equipment .equipment-content .equipment-content-img {
+    margin-left: -20px;
+    margin-right: 20px;
+}
+  .section-info .sub__info .sub__info-title img {
+    width: 62px;
+    height: 62px;
+}
+  .section-info .sub__info .sub__info-title h2 {
+    font-size: 16px;
+}
   .section-foundation .foundation__img .svgschema {
     margin-right: -56px;
     margin-left: 36px;
@@ -118,7 +139,7 @@
 }
 .section-info .info__bg {
   left: -262px;
-  bottom: -3%;
+  bottom: -1%;
 }
 .section-info .sub__info .sub__info-text ol li span {
   min-width: 30px;
@@ -615,17 +636,20 @@
   }
 }
 @media (max-width: 768px) {
-  .section-calculator .calculator__content {
+  .section-foundation .foundation__img .svgschema-tooltip {
+    max-width: 100%;
+}
+  /* .section-calculator .calculator__content {
     text-align: center;
-  }
+  } */
   .section-calculator .calculator__btn .calculator__btn-content .form_radio_btn label {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.section-calculator .calculator__radio-content .calculator__radio {
+/* .section-calculator .calculator__radio-content .calculator__radio {
   justify-content: center;
-}
+} */
   .section-we-sell .slider-mobile .carousel{
     width: 100%;
   }
@@ -829,21 +853,25 @@
     display: flex;
     justify-content: center;
   }
+  .section-foundation .foundation__img .foundation__img-txt br {
+    display: none;
+  }
   .section-foundation .foundation__img .foundation__img-txt {
+    width: 100%;
     margin-top: 56px;
-    margin-left: 31px;
+    margin-left: 60px;
   }
   .section-foundation .foundation__img {
      margin-left: 0; 
 }
+
 .section-foundation .foundation__img .svgschema-tooltips {
   width: 100%;
   justify-content: center;
-  margin-left: 40%;
 }
 .section-foundation .foundation__img .svgschema-tooltip P {
   margin: 0;
-  max-width: auto;
+  max-width: 100%;
   font-size: 16px;
 }
   .section-foundation .foundation__img .foundation__img-txt p {
@@ -1059,6 +1087,7 @@
   }
   .section-car .car__box img {
     margin-right: 25px;
+    margin-top: -19px;
 }
   .section-car .car__box p {
     font-size: 20px;
