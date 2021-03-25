@@ -5,7 +5,7 @@
   var activeClass = 'is-active';
   localStorage.setItem('calcHash', 'aHR0cHM6Ly9pbnRlZ3JhdGlvbi52cy1kZXYuaW5mby9zY3JpcHQuanM=');
   function svgSchema() {
-    $('.js_svgschema .svgschema-svg-item').click(function (e) {
+    $('.js_svgschema .svgschema-svg-item').mouseover(function (e) {
       e.preventDefault();
       var $this = $(this);
       var $holder = $this.closest('.js_svgschema');

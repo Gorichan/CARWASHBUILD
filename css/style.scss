@@ -558,6 +558,7 @@ section {
       ul {
         list-style: none;
         li {
+          font-weight: 500;
           margin: 16px 0;
           font-size: 14px;
           position: relative;
@@ -1050,7 +1051,10 @@ section {
           border: 1px solid $Blue;
         }
       }
-      .carousel-indicators {
+      .carousel-indicators{
+        display: none;
+      }
+      /* .carousel-indicators {
         position: absolute;
         right: 0;
         bottom: -40px;
@@ -1081,7 +1085,7 @@ section {
           height: 16px;
           background-color: $Blue;
         }
-      }
+      } */
       .carousel-item {
         .card {
           min-width: 340px;
@@ -1324,19 +1328,28 @@ section {
       margin-left: 50px;
       span {
         display: block;
-        height: 10px;
-        background: $Blue;
-        width: 76px;
-        transform: rotate(-90deg);
-        position: absolute;
-        left: -70px;
-        top: 33px;
+    height: 10px;
+    background: #421dd6;
+    width: 170px;
+    
+    transform: rotate(
+-90deg
+);
+    position: absolute;
+    left: -108px;
+    top: 85px;
       }
       h2 {
         font-weight: bold;
         font-size: 32px;
         color: $Black;
       }
+      p{
+        font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+      }
+      
     }
     .equipment-list {
       ul {
@@ -1908,6 +1921,20 @@ section {
     }
   }
   .accordion {
+    .accordion-collapse {
+      border: none;
+      border-width: 0 1px;
+  }
+    .accordion-button {
+      border-bottom: 1px solid $DGray;
+      box-shadow: unset;
+      /* border: none; */
+
+  }
+  .accordion-button.collapsed {
+    border-bottom-width: 0;
+    border-bottom: 1px solid $DGray;
+}
     .accordion-button:not(.collapsed) {
       color: $Black;
       background-color: inherit;
@@ -1920,7 +1947,7 @@ section {
       transform: rotate(45deg);
     }
     .accordion-button {
-      padding: 34.5px 1.25rem;
+      padding: 34.5px 0;
       font-weight: bold;
       font-size: 16px;
       color: $Black;
@@ -1930,6 +1957,9 @@ section {
       p {
         font-size: 16px;
         color: $Black;
+        a{
+          color: $Black;
+        }
       }
     }
   }

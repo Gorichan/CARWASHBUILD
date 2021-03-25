@@ -785,6 +785,7 @@ section {
 }
 
 .section-info .sub__info .sub__info-text ul li {
+  font-weight: 500;
   margin: 16px 0;
   font-size: 14px;
   position: relative;
@@ -1314,6 +1315,41 @@ section {
   margin-bottom: 50px;
 }
 
+.section-we-sell .slider .slide {
+  /* .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        left: 0;
+        z-index: 15;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-left: 0;
+        margin-right: 15%;
+        margin-left: 15%;
+        list-style: none;
+        border-radius: 50px;
+        button {
+          border-radius: 50px;
+          width: 12px;
+          height: 12px;
+          background-color: #eaeaea;
+          margin: 0 12px;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+        button.active {
+          width: 16px;
+          height: 16px;
+          background-color: $Blue;
+        }
+      } */
+}
+
 .section-we-sell .slider .slide .card-img,
 .section-we-sell .slider .slide .card-img-top {
   width: 340px;
@@ -1365,41 +1401,7 @@ section {
 }
 
 .section-we-sell .slider .slide .carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  left: 0;
-  z-index: 15;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
-  border-radius: 50px;
-}
-
-.section-we-sell .slider .slide .carousel-indicators button {
-  border-radius: 50px;
-  width: 12px;
-  height: 12px;
-  background-color: #eaeaea;
-  margin: 0 12px;
-  border: none;
-}
-
-.section-we-sell .slider .slide .carousel-indicators button:focus {
-  outline: none;
-}
-
-.section-we-sell .slider .slide .carousel-indicators button.active {
-  width: 16px;
-  height: 16px;
-  background-color: #421dd6;
+  display: none;
 }
 
 .section-we-sell .slider .slide .carousel-item .card {
@@ -1691,17 +1693,23 @@ section {
   display: block;
   height: 10px;
   background: #421dd6;
-  width: 76px;
+  width: 170px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: absolute;
-  left: -70px;
-  top: 33px;
+  left: -108px;
+  top: 85px;
 }
 
 .section-equipment .equipment-content .equipment__title h2 {
   font-weight: bold;
   font-size: 32px;
+  color: #000000;
+}
+
+.section-equipment .equipment-content .equipment__title p {
+  font-weight: 500;
+  font-size: 20px;
   color: #000000;
 }
 
@@ -2371,6 +2379,23 @@ section {
   color: #000000;
 }
 
+.section-questions .accordion .accordion-collapse {
+  border: none;
+  border-width: 0 1px;
+}
+
+.section-questions .accordion .accordion-button {
+  border-bottom: 1px solid #838383;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  /* border: none; */
+}
+
+.section-questions .accordion .accordion-button.collapsed {
+  border-bottom-width: 0;
+  border-bottom: 1px solid #838383;
+}
+
 .section-questions .accordion .accordion-button:not(.collapsed) {
   color: #000000;
   background-color: inherit;
@@ -2387,7 +2412,7 @@ section {
 }
 
 .section-questions .accordion .accordion-button {
-  padding: 34.5px 1.25rem;
+  padding: 34.5px 0;
   font-weight: bold;
   font-size: 16px;
   color: #000000;
@@ -2399,6 +2424,10 @@ section {
 
 .section-questions .accordion .accordion-body p {
   font-size: 16px;
+  color: #000000;
+}
+
+.section-questions .accordion .accordion-body p a {
   color: #000000;
 }
 
