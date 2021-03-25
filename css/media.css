@@ -1168,6 +1168,9 @@
   }
 }
 @media (max-width: 480px) {
+  .section-info .sub__info .sub__info-text .mt {
+    margin-top: 0;
+}
   .section-foundation .foundation__img .svgschema {
     margin-right: 0;
     margin-left: 0;
@@ -1729,6 +1732,9 @@
   }
 }
 @media (max-width: 360px){
+  .section-info .sub__info .sub__info-text .mt {
+    margin-top: 0;
+}
   .section-foundation .foundation__img .svgschema {
     margin-right: 0;
     margin-left: 0;
