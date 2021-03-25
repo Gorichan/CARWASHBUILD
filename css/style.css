@@ -73,6 +73,12 @@ section {
 }
 
 .modal .modal-dialog {
+  margin: 0 !important;
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
   max-width: 500px;
   max-height: 500px;
   padding: 0 54px;
