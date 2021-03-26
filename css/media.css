@@ -115,6 +115,9 @@
 
 }
 @media (max-width: 1024px){
+  .section-info .sub__info .sub__info-text .sub__info-btn {
+    min-height: 105px;
+}
   .section-self_service .self_service-text .self_service-btn {
     width: 640px;
 }
