@@ -1,5 +1,4 @@
 
-
 @media (max-width: 1650px) {
   .section-info .info__bg {
     left: -100px;
@@ -424,7 +423,7 @@
     font-size: 15px;
     margin-bottom: 32px;
   }
-  .section-self_service .self_service-text .self_service-btn a {
+  .section-self_service .self_service-text .self_service-btn .hov {
     font-size: 14px;
   }
   .section-we-sell .we-sell__title .Rectangle {
@@ -662,6 +661,9 @@
   }
 }
 @media (max-width: 768px) {
+
+  
+  
   .section-calculator .calculator__soum-content-box {
     min-height: initial;
 }
@@ -961,12 +963,16 @@
     flex-direction: column;
     margin-left: 0;
   }
+  .section-self_service .self_service-text .self_service-btn {
+     width: 100%; 
+}
   .section-self_service .self_service-text .self_service-btn .btn-secondary {
     width: 100%;
     font-size: 15px;
     margin-bottom: 32px;
   }
-  .section-self_service .self_service-text .self_service-btn a {
+  .section-self_service .self_service-text .self_service-btn .hov {
+    margin-top: 30px;
     font-size: 14px;
   }
   .section-we-sell .we-sell__title .Rectangle {
@@ -1241,6 +1247,10 @@
 }
 }
 @media (max-width: 480px) {
+  
+  .section-self_service .self_service-text .self_service-btn {
+   width: 100%; 
+}
   .section-info .sub__info .sub__info-text .mt {
     margin-top: 0;
 }
@@ -1527,8 +1537,9 @@
     font-size: 15px;
     margin-bottom: 32px;
   }
-  .section-self_service .self_service-text .self_service-btn a {
+  .section-self_service .self_service-text .self_service-btn .hov {
     font-size: 14px;
+    margin-top: 20px;
   }
   .section-we-sell .we-sell__title .Rectangle {
     left: -142px;
@@ -1821,6 +1832,47 @@
 }
 }
 @media (max-width: 360px){
+  .section-self_service .self_service-text .self_service-btn {
+    width: 100%;
+}
+.section-self_service .self_service-text .self_service-btn .btn {
+  font-size: 15px;
+}
+.section-self_service .self_service-text .self_service-btn .hov {
+  margin-top: 30px;
+  font-size: 14px;
+}
+  /* .modal-characteristics .modal-dialog .modal-body form {
+    max-width: 260px;
+    margin-top: 400px;
+}
+  .modal-characteristics {
+    overflow-y: auto !important;
+}
+ 
+  .modal-characteristics .modal-dialog .modal-body {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 1rem 1rem !important;
+}
+.modal-characteristics .modal-dialog .modal-body .characteristics-content .characteristics-content-title {
+  flex-direction: column;
+  align-items: center;
+}
+.modal-characteristics .modal-dialog .modal-body .characteristics-content {
+  margin-top: 10px;
+  width: 100%;
+  margin-left: 0;
+}
+.modal .modal-dialog .modal-content {
+  position: relative;
+  padding: 10px 0;
+}
+.modal-characteristics .modal-dialog .modal-body .characteristics-content .characteristics-content-txt ul li::before {
+  
+  left: -32px;
+  
+} */
   .section-equipment .equipment-content .equipment__title span {
     left: -133px;
     width: 234px;

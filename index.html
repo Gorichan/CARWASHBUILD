@@ -147,20 +147,21 @@
       >
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel-characteristics">
-                Оставьте заявку
-              </h5>
-              <p>И получите лучшую цену</p>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
+            
             <div class="modal-body">
               <form action="">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel-characteristics">
+                    Оставьте заявку
+                  </h5>
+                  <p>И получите лучшую цену</p>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
                 <input type="text" name="name" placeholder="Имя" />
                 <input
                 type="tel"
@@ -169,6 +170,15 @@
                 required
                 placeholder="+7 (---) --- -- --"
               />
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                  Отправить
+                </button>
+                <p>
+                  Нажимая на&nbsp;кнопку вы даёте свое согласие <br />
+                  на&nbsp;обработку <a href="#">персональных данных</a>
+                </p>
+              </div>
               </form>
               <div class="characteristics-content">
                 <div class="characteristics-content-title">
@@ -177,26 +187,18 @@
                 </div>
                 <div class="characteristics-content-txt">
                   <ul>
-                    <li>Размер моечного поста 6600х5000х220&nbsp;мм.</li>
-                    <li>Используем высокомарочный гидротехнический бетон марки М400 и выше, устойчивый к&nbsp;эксплуатации в&nbsp;условиях российского климата.</li>
-                    <li>Фундамент состоит из&nbsp;2-х полуплит 6600х2200х220&nbsp;мм, и&nbsp;2-х ригелей 6600х600х220&nbsp;мм.</li>
-                    <li>Фундамент имеет усиленный каркас из&nbsp;арматуры Ø 12, расположенной в&nbsp;4&nbsp;слоя и&nbsp;24&nbsp;ряда; шаг арматуры не&nbsp;более 15&nbsp;см.</li>
-                    <li>Закладываем выводы под&nbsp;систему против замерзания «АНТИФРОСТ», контуры для&nbsp;организации обогрева фундамента системой водяного теплого пола для&nbsp;поддержания постоянной температуры бетонного основания 5-8 ̊С. Используем качественные трубы REHAU для&nbsp;систем теплого водяного пола.</li>
+                    <li><p> Размер моечного поста 6600х5000х220 мм.</p></li>
+                    <li><p>Используем высокомарочный гидротехнический бетон марки М400 и выше, устойчивый к эксплуатации в условиях российского климата.</p></li>
+                    <li><p>Фундамент состоит из 2-х полуплит 6600х2200х220 мм, и 2-х ригелей 6600х600х220 мм.</p></li>
+                    <li><p>Фундамент имеет усиленный каркас из арматуры Ø 12, расположенной в 4 слоя и 24 ряда; шаг арматуры не более 15 см.</p></li>
+                    <li><p>Закладываем выводы под систему против замерзания “АНТИФРОСТ”, контуры для организации обогрева фундамента системой водяного теплого пола для поддержания постоянной температуры бетонного основания 5-8 ̊С. Используем качественные трубы REHAU для систем теплого водяного пола.</p></li>
                   </ul>
                 </div>
               </div>
               
               
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">
-                Отправить
-              </button>
-              <p>
-                Нажимая на&nbsp;кнопку вы даёте свое согласие <br />
-                на&nbsp;обработку <a href="#">персональных данных</a>
-              </p>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -341,7 +343,7 @@
         </div>
       </header>
       <!-- header -->
-      <section class="section-info" id="info-section">
+      <section class="section-info" >
         <img class="info__bg" src="img/info-bg.png" alt="info" />
         <div class="container">
           <div class="row">
@@ -381,7 +383,7 @@
             </div>
           </div>
           <div class="sub__info">
-            <div class="row justify-content-around">
+            <div class="row justify-content-around " id="info-section">
               <div class="col-lg-3 p-0">
                 <div class="sub__info-title">
                   <h2>Автомойка самообслуживания под&nbsp;ключ</h2>

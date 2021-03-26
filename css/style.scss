@@ -153,13 +153,83 @@ section {
 }
 
 .modal-characteristics .modal-dialog {
-  width: 1000px;
+  width: 1200px;
     max-width: 100%;
     transform: translate(-50%, -50%)!important;
     left: 50%;
     top: 50%;
     position: absolute!important;
     max-height: initial;
+    .modal-content{
+      .modal-header .btn-close {
+        position: absolute;
+        top: -28.36px;
+    right: -21.36px;
+
+    }
+    }
+      .modal-body {
+      flex-direction: unset !important;
+      form{
+        max-width: 260px;
+          input {
+            width: 100% !important;
+        }
+        .modal-footer{
+          margin-top: 20px;
+          p{
+            br{
+              display: none;
+            }
+            a{
+              display: block;
+            }
+          }
+        }
+        
+      }
+      .characteristics-content{
+        width: 522px;
+        margin-left: 35px;
+        .characteristics-content-title{
+          display: flex;
+          justify-content: space-between;
+          h5{
+            font-weight: 500;
+font-size: 16px;
+color: $Black;
+          }
+        }
+        .characteristics-content-txt{
+          ul{
+            list-style: none;
+            li{
+              font-weight: 500;
+    margin: 16px 0;
+    font-size: 14px;
+    color: $DGrey;
+    position: relative;
+              &::before {
+                content: "";
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background-image: url(../img/svg/Group-2.svg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                left: -40px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            }
+          }
+        }
+      }
+      
+  }
 }
 
 .header {
@@ -884,6 +954,10 @@ section {
       }
     }
     .hov {
+       
+        
+        outline: none;
+    
       border:none;
       background: unset;
       margin: 0 24px;

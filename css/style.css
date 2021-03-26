@@ -182,7 +182,7 @@ section {
 }
 
 .modal-characteristics .modal-dialog {
-  width: 1000px;
+  width: 1200px;
   max-width: 100%;
   -webkit-transform: translate(-50%, -50%) !important;
           transform: translate(-50%, -50%) !important;
@@ -190,6 +190,87 @@ section {
   top: 50%;
   position: absolute !important;
   max-height: initial;
+}
+
+.modal-characteristics .modal-dialog .modal-content .modal-header .btn-close {
+  position: absolute;
+  top: -28.36px;
+  right: -21.36px;
+}
+
+.modal-characteristics .modal-dialog .modal-body {
+  -webkit-box-orient: unset !important;
+  -webkit-box-direction: unset !important;
+      -ms-flex-direction: unset !important;
+          flex-direction: unset !important;
+}
+
+.modal-characteristics .modal-dialog .modal-body form {
+  max-width: 260px;
+}
+
+.modal-characteristics .modal-dialog .modal-body form input {
+  width: 100% !important;
+}
+
+.modal-characteristics .modal-dialog .modal-body form .modal-footer {
+  margin-top: 20px;
+}
+
+.modal-characteristics .modal-dialog .modal-body form .modal-footer p br {
+  display: none;
+}
+
+.modal-characteristics .modal-dialog .modal-body form .modal-footer p a {
+  display: block;
+}
+
+.modal-characteristics .modal-dialog .modal-body .characteristics-content {
+  width: 522px;
+  margin-left: 35px;
+}
+
+.modal-characteristics .modal-dialog .modal-body .characteristics-content .characteristics-content-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-characteristics .modal-dialog .modal-body .characteristics-content .characteristics-content-title h5 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+.modal-characteristics .modal-dialog .modal-body .characteristics-content .characteristics-content-txt ul {
+  list-style: none;
+}
+
+.modal-characteristics .modal-dialog .modal-body .characteristics-content .characteristics-content-txt ul li {
+  font-weight: 500;
+  margin: 16px 0;
+  font-size: 14px;
+  color: #5e5e5e;
+  position: relative;
+}
+
+.modal-characteristics .modal-dialog .modal-body .characteristics-content .characteristics-content-txt ul li::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/svg/Group-2.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .header {
@@ -1164,6 +1245,7 @@ section {
 }
 
 .section-foundation .foundation__btn .hov {
+  outline: none;
   border: none;
   background: unset;
   margin: 0 24px;
