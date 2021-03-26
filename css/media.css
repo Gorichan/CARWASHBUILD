@@ -690,7 +690,7 @@
   width: 100%;
   margin-left: 0;
 }
-.modal .modal-dialog .modal-content {
+.modal-characteristics .modal-dialog .modal-content {
   position: relative;
   padding: 10px 0;
 }
