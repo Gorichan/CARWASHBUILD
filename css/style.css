@@ -181,9 +181,15 @@ section {
   padding: 50px;
 }
 
-.modal-characteristics {
+.modal-characteristics .modal-dialog {
   width: 1000px;
-  height: 530px;
+  max-width: 100%;
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+  left: 50%;
+  top: 50%;
+  position: absolute !important;
+  max-height: initial;
 }
 
 .header {
