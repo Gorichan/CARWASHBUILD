@@ -69,7 +69,7 @@ section {
   overflow-y: hidden;
 }
 .modal {
-  background: #421dd633;
+  /* background: #421dd633; */
   .modal-dialog {
     margin: 0!important;
     position: absolute!important;
@@ -150,6 +150,11 @@ section {
 
 .modal-content {
   padding: 50px;
+}
+
+.modal-characteristics{
+  width: 1000px;
+  height: 530px;
 }
 
 .header {
@@ -588,6 +593,7 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        
         span {
           font-weight: 600;
           font-size: 16px;
@@ -608,8 +614,9 @@ section {
           }
         }
         a {
+          z-index: 2;
           font-weight: bold;
-          font-size: 18px;
+          font-size: 17px;
 
           color: $Blue;
           display: flex;
@@ -767,9 +774,11 @@ section {
       &-tooltips {
         display: flex;
         flex-direction: column;
+        min-height: 110px;
       }
 
       &-tooltip {
+        
         position: relative;
         max-width: 400px;
         padding: 10px 20px;
@@ -778,7 +787,7 @@ section {
         display: flex;
         align-items: center;
         color: $Black;
-        font-weight: 700;
+        font-weight: 500;
         letter-spacing: 0.02em;
         border-left: 3px solid #421dd6;
         border-radius: 2px;
@@ -820,15 +829,15 @@ section {
           display: block;
         }
 
-        &:last-child {
+        /* &:last-child {
           margin-bottom: 0;
-        }
+        } */
       }
     }
     .foundation__img-txt {
       position: relative;
       color: $Black;
-      margin-top: 206px;
+      margin-top: 125px;
       margin-left: 70px;
       width: 430px;
       p {
@@ -869,7 +878,9 @@ section {
         background: #6c51d7;
       }
     }
-    a {
+    .hov {
+      border:none;
+      background: unset;
       margin: 0 24px;
       font-weight: bold;
       font-size: 18px;
@@ -940,7 +951,7 @@ section {
       justify-content: end;
       margin-top: 85px;
       align-items: center;
-      .btn-secondary {
+      .btn {
         
         color: $White;
         background: $Blue;
@@ -954,7 +965,7 @@ section {
           background: #6c51d7;
         }
       }
-      a {
+      .hov {
         margin: 0 24px;
         font-weight: bold;
         font-size: 18px;
@@ -1031,7 +1042,8 @@ section {
       }
       .carousel-control-next,
       .carousel-control-prev {
-        position: absolute;
+        display: none;
+        /* position: absolute;
         top: -100px;
         bottom: 0;
         z-index: 1;
@@ -1054,7 +1066,7 @@ section {
         transition: 0.5s;
         &:hover {
           border: 1px solid $Blue;
-        }
+        } */
       }
       .carousel-indicators{
         display: none;
@@ -1140,6 +1152,9 @@ section {
             }
           }
           .def {
+            outline: none;
+            border: none;
+            background: inherit;
             margin-top: 20px;
             color: $Blue;
             font-weight: bold;
@@ -1413,6 +1428,11 @@ section {
       font-weight: bold;
       font-size: 34px;
     }
+    p{
+      font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    }
   }
   .calculator__btn {
     .calculator__btn-title {
@@ -1555,6 +1575,9 @@ section {
         color: $Blue;
       }
     }
+  }
+  .calculator__soum-content-box{
+    min-height: 210px;
   }
   .calculator__soum-content {
     display: flex;
@@ -1727,6 +1750,7 @@ section {
       .carousel-inner {
         .carousel-item {
           .item-img {
+            height: 277px;
             position: relative;
           }
           .item-text {
@@ -1735,12 +1759,13 @@ section {
 
             bottom: 0;
             background: $White;
-            padding: 24px;
+            padding: 10px;
             max-width: 205px;
             p {
               font-weight: 500;
               font-size: 15px;
               color: $Black;
+              margin-bottom: 5px;
             }
           }
         }
@@ -1934,12 +1959,12 @@ section {
     .accordion-button {
       border-bottom: 1px solid $DGray;
       box-shadow: unset;
-      /* border: none; */
+      
 
   }
   .accordion-button.collapsed {
     border-bottom-width: 0;
-    border-bottom: 1px solid $DGray;
+    
 }
     .accordion-button:not(.collapsed) {
       color: $Black;
@@ -1959,6 +1984,7 @@ section {
       color: $Black;
     }
     .accordion-body {
+      padding: 1rem 0;
       max-width: 770px;
       p {
         font-size: 16px;
@@ -2008,7 +2034,7 @@ section {
         }
       }
       .specialist__form-textarea {
-        .form-control {
+        textarea {
           border: none;
           height: 100px;
           padding: 14px 24px;
@@ -2070,14 +2096,15 @@ section {
           color: $DGray;
           margin-bottom: 2rem;
         }
-        span {
+        a {
+          text-decoration: none;
           span {
             color: $Black;
             font-weight: bold;
             font-size: 16px;
           }
         }
-        a {
+        .lin {
           font-weight: 500;
           font-size: 16px;
           color: $Blue;
@@ -2089,6 +2116,7 @@ section {
 }
 .section-footer {
   .container-fluid {
+    max-width: 1380.5px;
     padding: 0 28px;
   }
   padding-top: 60px;

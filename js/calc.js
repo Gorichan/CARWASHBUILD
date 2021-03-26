@@ -97,5 +97,5 @@ const render = sum => {
         calcResult = sub + ' ' + subSub + ' ' + ' ₽';
     }
 
-    document.getElementById('value-container').innerHTML = calcResult;
+    document.getElementById('value-container').innerHTML = 'от ' + calcResult;
 }

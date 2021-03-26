@@ -49,7 +49,7 @@ function tel_init(){
   $inputs.mask('+7 999 999-99-99 00000000', options);
 
 
-  console.log($inputs)
+  /* console.log($inputs) */
 
   return true;
 }

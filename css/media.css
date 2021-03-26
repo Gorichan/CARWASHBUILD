@@ -662,6 +662,12 @@
   }
 }
 @media (max-width: 768px) {
+  .section-calculator .calculator__soum-content-box {
+    min-height: initial;
+}
+  .section-foundation .foundation__img .svgschema-tooltip:last-child {
+    margin-bottom: 0;
+}
   .section-foundation .foundation__img .foundation__img-txt p b {
     display: block;
 }
