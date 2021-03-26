@@ -85,7 +85,9 @@
               <input type="text" name="name" id="" placeholder="Имя" />
               <input
                 type="tel"
-                name="tel"
+                name="phone"
+                value=""
+                required
                 id=""
                 placeholder="+7 (---) --- -- --"
               />
@@ -1723,7 +1725,7 @@
               </div>
             </div>
 
-            <div class="col-lg-5 col-12">
+            <div class="col-lg-5 col-12 d-flex justify-content-center align-items-center">
               <div class="order__content">
                 <ul>
                   <li>
@@ -2407,18 +2409,21 @@
                 </div>
               </div>
               <div class="col-lg-7">
-                <div class="specialist__form">
+                <form class="specialist__form">
                   <div class="specialist__form-input-box">
-                    <input type="text" name="name" id="" placeholder="Имя" />
+                    <input type="text" name="name" id="" value="" placeholder="Имя" />
                     <input
                       type="tel"
-                      name="tel"
+                      name="phone"
                       id=""
+                      value=""
+                      required
                       placeholder="+7 (---) --- -- --"
                     />
                   </div>
                   <div class="specialist__form-textarea">
                     <textarea
+                    name="comment"
                       class="form-control"
                       placeholder="Ваш вопрос"
                       id="floatingTextarea2"
@@ -2440,7 +2445,7 @@
                       <a href="#">персональных данных</a></span
                     >
                   </div>
-                </div>
+                </form>
               </div>
               <div class="col-lg-5">
                 <div class="specialist__img">
@@ -2499,11 +2504,11 @@
       </footer>
     </div>
     <!-- /.wrapper-page -->
-
+    
     <script src="js/jquery.slim.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
     <script src="js/calc.js"></script>
   </body>
 </html>

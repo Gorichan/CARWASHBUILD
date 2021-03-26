@@ -114,11 +114,17 @@
  
 }
 
-
 }
 @media (max-width: 1024px){
+  .section-self_service .self_service-text .self_service-btn {
+    width: 640px;
+}
   .section-we-sell .slider .slide .carousel-item .card .card-body .card-text-sub {
     justify-content: end;
+}
+.section-foundation .foundation__btn {
+  margin-top: 30px;
+  
 }
   .section-equipment .equipment-content .equipment__title span {
     width: 200px;
@@ -134,6 +140,7 @@
   .section-foundation .foundation__img .foundation__img-txt {
     width: 300px;
     margin-left: 41px;
+    margin-top: 50px;
 }
   .section-equipment .equipment-content .equipment-content-img {
     margin-left: -20px;

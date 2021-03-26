@@ -739,7 +739,7 @@ section {
 }
 
 .section-info .sub__info .sub__info-text .list-info {
-  min-height: 300px;
+  min-height: 335px;
   margin-bottom: 45px;
 }
 
@@ -2012,6 +2012,7 @@ section {
 
 .section-order .order__content ul {
   list-style: none;
+  padding-left: 0;
 }
 
 .section-order .order__content ul li {

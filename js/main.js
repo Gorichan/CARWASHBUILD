@@ -61,6 +61,29 @@ var myInput = document.getElementById('myInput')
 myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
+
+
+
+$(document).ready(function(){
+  tel_init();
+});
+function tel_init(){
+  if(!$.fn.mask){
+    return false;
+  }
+  $inputs = $('input[type="tel"], input.tel');
+  var options =  {
+    translation: {
+      '+': {pattern: /\+/, optional: true},
+      '7': {pattern: /[123456789]/},
+      '8': {pattern: /[8]/},
+      '9': { pattern: /[0-9]/ },
+      '0': { pattern: /[#;,:0-9]/, optional: true},
+    },
+  };
+  $inputs.mask('+7 999 999-99-99 00000000', options);
+  return true;
+}
   
   
 
