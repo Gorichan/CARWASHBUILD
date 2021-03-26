@@ -1,5 +1,7 @@
 "use strict";
 
+tel_init();
+
 (function ($, window, document) {
 
   var activeClass = 'is-active';
@@ -18,6 +20,8 @@
   }
 
   $(svgSchema);
+
+
 })(window.jQuery, window, document);
 
 (function ($, window, document) {
@@ -26,9 +30,36 @@
   });
 })(window.jQuery, window, document);
 
+function tel_init(){
+  if(!$.fn.mask){
+    return false;
+  }
+
+  var $inputs = jQuery('input[type="tel"], input.tel');
+
+  var options =  {
+    translation: {
+      '+': {pattern: /\+/, optional: true},
+      '7': {pattern: /[123456789]/},
+      '8': {pattern: /[8]/},
+      '9': { pattern: /[0-9]/ },
+      '0': { pattern: /[#;,:0-9]/, optional: true},
+    },
+  };
+  $inputs.mask('+7 999 999-99-99 00000000', options);
 
 
-  $(".carousel-control-prev").click(function(){
+  console.log($inputs)
+
+  return true;
+}
+
+
+
+
+
+
+$(".carousel-control-prev").click(function(){
     $(".carousel").carousel("prev");
   });
   $(".carousel-control-next").click(function(){
@@ -58,32 +89,8 @@
   var myModal = document.getElementById('myModal')
 var myInput = document.getElementById('myInput')
 
-myModal.addEventListener('shown.bs.modal', function () {
+myModal?.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
 
-
-
-$(document).ready(function(){
-  tel_init();
-});
-function tel_init(){
-  if(!$.fn.mask){
-    return false;
-  }
-  $inputs = $('input[type="tel"], input.tel');
-  var options =  {
-    translation: {
-      '+': {pattern: /\+/, optional: true},
-      '7': {pattern: /[123456789]/},
-      '8': {pattern: /[8]/},
-      '9': { pattern: /[0-9]/ },
-      '0': { pattern: /[#;,:0-9]/, optional: true},
-    },
-  };
-  $inputs.mask('+7 999 999-99-99 00000000', options);
-  return true;
-}
-  
-  
 
