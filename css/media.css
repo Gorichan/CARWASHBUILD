@@ -113,6 +113,7 @@
  
 }
 
+
 }
 @media (max-width: 1024px){
   .section-order .order__content {
@@ -677,7 +678,7 @@
 }
  
   .modal-characteristics .modal-dialog .modal-body {
-    flex-direction: column !important;
+    /* flex-direction: column !important; */
     align-items: center;
     padding: 1rem 1rem !important;
 }
@@ -696,6 +697,7 @@
   margin-top: 25px;
   width: 100%;
   margin-left: 0;
+  margin: 10px;
 }
 .modal-characteristics .modal-dialog .modal-content {
   position: relative;
@@ -725,17 +727,13 @@
   .section-foundation .foundation__img .svgschema-tooltip {
     max-width: 100%;
 }
-  /* .section-calculator .calculator__content {
-    text-align: center;
-  } */
+  
   .section-calculator .calculator__btn .calculator__btn-content .form_radio_btn label {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* .section-calculator .calculator__radio-content .calculator__radio {
-  justify-content: center;
-} */
+
   .section-we-sell .slider-mobile .carousel{
     width: 100%;
   }
@@ -860,6 +858,7 @@
   .header__sub .header__sub-box {
     margin-top: 14px;
     margin-bottom: 0;
+    text-align: center;
   }
   
   .section-info .info__text p {
@@ -1144,7 +1143,6 @@
   .section-order .order__content {
     margin-top: -20px;
     max-height: 600px;
-    margin: 0 0 0 100px;
 }
   
   .section-car {
@@ -1287,6 +1285,11 @@
   }
 }
 @media (max-width: 600px){
+  .modal-characteristics .modal-dialog .modal-body {
+    flex-direction: column !important; 
+    align-items: center;
+    padding: 1rem 1rem !important;
+}
   .modal-dialog {
     width: 100%;
 }
@@ -2034,6 +2037,7 @@
 }
 .section-car .car__slider-mobile .carousel .carousel-inner .carousel-item .item-text p {
   margin-bottom: 4px;
+  width: 83px;
 }
 .section-questions .questions__title {
   margin: 80px 0 40px 0;
