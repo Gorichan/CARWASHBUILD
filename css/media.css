@@ -115,6 +115,10 @@
 
 }
 @media (max-width: 1024px){
+  .section-order .order__content {
+     margin-top: 0; 
+    max-height: 474px;
+}
   .section-info .sub__info .sub__info-text .sub__info-btn {
     min-height: 105px;
 }

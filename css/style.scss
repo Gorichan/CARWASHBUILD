@@ -907,7 +907,7 @@ section {
       position: relative;
       color: $Black;
       margin-top: 125px;
-      margin-left: 70px;
+      margin-left: 36px;
       width: 430px;
       p {
         span {
@@ -1098,6 +1098,7 @@ section {
     margin-top: 70px;
     margin-bottom: 50px;
     .slide {
+      
       .card-img,
       .card-img-top {
         width: 340px;
@@ -1175,6 +1176,10 @@ section {
       } */
       .carousel-item {
         .card {
+          button{
+            border: none;
+            background: initial;
+          }
           min-width: 340px;
           border: none;
           .card-body {
@@ -2019,15 +2024,23 @@ section {
     }
   }
   .accordion {
+.accordion-item{
+  border-bottom: 1px solid $DGray;
+  &:last-child{
+    border-bottom: none;
+  }
+}
+    
     .accordion-collapse {
       border: none;
       border-width: 0 1px;
     }
     .accordion-button {
-      border-bottom: 1px solid $DGray;
+      
       box-shadow: unset;
     }
     .accordion-button.collapsed {
+      
       border-bottom-width: 0;
     }
     .accordion-button:not(.collapsed) {

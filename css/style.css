@@ -1192,7 +1192,7 @@ section {
   position: relative;
   color: #000000;
   margin-top: 125px;
-  margin-left: 70px;
+  margin-left: 36px;
   width: 430px;
 }
 
@@ -1503,6 +1503,11 @@ section {
 .section-we-sell .slider .slide .carousel-item .card {
   min-width: 340px;
   border: none;
+}
+
+.section-we-sell .slider .slide .carousel-item .card button {
+  border: none;
+  background: initial;
 }
 
 .section-we-sell .slider .slide .carousel-item .card .card-body {
@@ -2491,13 +2496,20 @@ section {
   color: #000000;
 }
 
+.section-questions .accordion .accordion-item {
+  border-bottom: 1px solid #838383;
+}
+
+.section-questions .accordion .accordion-item:last-child {
+  border-bottom: none;
+}
+
 .section-questions .accordion .accordion-collapse {
   border: none;
   border-width: 0 1px;
 }
 
 .section-questions .accordion .accordion-button {
-  border-bottom: 1px solid #838383;
   -webkit-box-shadow: unset;
           box-shadow: unset;
 }
