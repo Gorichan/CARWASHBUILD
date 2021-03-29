@@ -189,6 +189,9 @@
 }
 }
 @media (max-width: 988px) {
+  .section-calculator .calculator__range-content .calculator__range .rangeNums {
+    width: auto; 
+ }
   .header form {
     position: absolute;
     bottom: 50px;
@@ -417,7 +420,7 @@
   }
   .section-self_service .self_service-title {
     margin-top: 69px;
-    margin-left: 16px;
+    /* margin-left: 16px; */
     width: 100%;
   }
   .section-self_service .self_service-title h2 {
@@ -987,7 +990,7 @@
   
 .section-self_service .self_service-img {
   margin-top: 60px;
-  margin: 60px 0 0 95px;
+  margin: 60px 0 0 0;
 }
   .section-self_service .self_service-text {
     margin-top: 0;
@@ -1724,8 +1727,7 @@
     width: 100%;
   }
   .section-calculator .calculator__range-content .calculator__range .activeCalc {
-   
-    font-size: 25px;
+    font-size: 20px;
     
 }
 .section-calculator .calculator__range-content .calculator__range {
@@ -1894,6 +1896,11 @@
   }
 }
 @media (max-width: 414px) {
+  .section-foundation .foundation__title span {
+    left: -70px;
+    top: 62px;
+    width: 130px;
+}
   .section-equipment .equipment-content .equipment__title span {
     left: -114px;
     width: 198px;
@@ -1902,6 +1909,11 @@
 
 }
 @media (max-width: 375px){
+  .section-foundation .foundation__title span {
+    left: -69px;
+    top: 63px;
+    width: 127px;
+}
   .section-car .car__title span {
     width: 74px;
     left: -54px;
@@ -1961,6 +1973,16 @@
 
 }
 @media (max-width: 360px){
+  .section-foundation .foundation__btn .hov {
+    outline: none;
+    border: none;
+    background: unset;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    
+    /* min-width: 390px; */
+}
 
   .section-self_service .self_service-text .self_service-btn {
     width: 100%;
@@ -2025,9 +2047,9 @@
   width: 127px;
 }
 .section-we-sell .we-sell__title .Rectangle {
-  left: -195px;
-    width: 350px;
-    top: 175px;
+  left: -163px;
+    width: 287px;
+    top: 138px;
 }
 .section-we-sell .slider-mobile {
   margin-bottom: 110px;
@@ -2126,6 +2148,23 @@
   margin: 8px 0;
 }
 
+
+}
+@media (max-width: 320px) {
+  .section-foundation .foundation__btn .hov {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+   
+}
+.section-foundation .foundation__btn .hov::after {
+  margin: 0px 24px;
+ 
+}
+.header .navbar-light .navbar-toggler {
+  right: 0px;
+  top: 18.22px;
+}
 
 }
 

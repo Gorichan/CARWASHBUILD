@@ -1997,7 +1997,7 @@ section {
 .section-calculator .calculator__range-content .calculator__range .activeCalc {
   color: #421dd6;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   display: inline-block;
   /* min-width: 40px; */
   text-align: center;
@@ -2007,11 +2007,11 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   font-size: 20px;
   margin-right: -10px;
+  width: 586px;
 }
 
 .section-calculator .calculator__radio-content .calculator__radio-title {
