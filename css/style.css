@@ -42,7 +42,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 250px;
+  min-height: 270px;
 }
 
 .wrapper-page {
@@ -284,7 +284,8 @@ section {
 }
 
 .header nav.nav--active {
-  border: 1px solid #838383;
+  -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
   color: black;
   background: #fff;
 }
@@ -369,7 +370,7 @@ section {
 
 .header__content .heaedr__title {
   width: 696px;
-  margin-top: 85px;
+  margin-top: 130px;
 }
 
 .header__content .heaedr__title h1 {
@@ -1278,6 +1279,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 390px;
 }
 
 .section-foundation .foundation__btn .hov:hover {
@@ -1529,6 +1531,7 @@ section {
 }
 
 .section-we-sell .slider .slide .carousel-item .card button {
+  padding: 0;
   border: none;
   background: initial;
 }

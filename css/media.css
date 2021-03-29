@@ -114,6 +114,9 @@
 }
 }
 @media (max-width: 1024px){
+  .header form a {
+    margin-right: 14px;
+}
   .section-car .car__slider .carousel .carousel-inner .carousel-item .item-img {
     height: 222px;
 }
@@ -406,9 +409,9 @@
   .section-self_service .self_service-text {
     margin-top: 0;
   }
-  .section-self_service .self_service-text ul {
+  /* .section-self_service .self_service-text ul {
     padding: 0 16px;
-  }
+  } */
   .section-self_service .self_service-text ul li br {
     display: none;
   }
@@ -436,9 +439,9 @@
     font-size: 14px;
   }
   .section-we-sell .we-sell__title .Rectangle {
-    left: -142px;
-    width: 243px;
-    top: 118px;
+    left: -101px;
+    width: 172px;
+    top: 85px;
   }
   .section-we-sell .we-sell__title {
     margin-left: 14px;
@@ -832,7 +835,7 @@
   }
   .header__content .heaedr__title {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 85px;
   }
   .header__content .heaedr__title h1 {
     font-size: 28px;
@@ -989,15 +992,15 @@
   .section-self_service .self_service-text {
     margin-top: 0;
   }
-  .section-self_service .self_service-text ul {
+  /* .section-self_service .self_service-text ul {
     padding: 0 16px;
-  }
+  } */
   .section-self_service .self_service-text ul li br {
     display: none;
   }
   .section-self_service .self_service-title {
     margin-top: 69px;
-    margin-left: 16px;
+    
     width: 100%;
   }
   .section-self_service .self_service-title h2 {
@@ -1411,7 +1414,7 @@
   }
   .header__content .heaedr__title {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 85px;
   }
   .header__content .heaedr__title h1 {
     font-size: 20px;
@@ -1544,7 +1547,7 @@
 }
 .section-self_service .self_service-img {
   margin-top: 60px;
-  margin: 60px 15px 0 15px;
+  margin: 60px 0 0 0 ;
 }
   .section-foundation .foundation__img .foundation__img-txt p br {
     display: none;
@@ -1570,15 +1573,14 @@
   .section-self_service .self_service-text {
     margin-top: 0;
   }
-  .section-self_service .self_service-text ul {
+  /* .section-self_service .self_service-text ul {
     padding: 0 16px;
-  }
+  } */
   .section-self_service .self_service-text ul li br {
     display: none;
   }
   .section-self_service .self_service-title {
     margin-top: 69px;
-    margin-left: 16px;
     width: 100%;
   }
   .section-self_service .self_service-title h2 {
@@ -1891,6 +1893,14 @@
     padding: 43px 0 0 0;
   }
 }
+@media (max-width: 414px) {
+  .section-equipment .equipment-content .equipment__title span {
+    left: -114px;
+    width: 198px;
+    top: 100px;
+}
+
+}
 @media (max-width: 375px){
   .section-car .car__title span {
     width: 74px;
@@ -2048,7 +2058,7 @@
   padding: 50px 0 0 0;
 }
 .section-self_service .self_service-img {
-  margin: 20px 15px 0 15px;
+  margin: 20px 0 0 0;
 }
 .section-equipment .equipment-content .equipment-btn .btn-secondary {
   margin: 10px auto;
