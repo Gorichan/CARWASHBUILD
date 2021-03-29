@@ -1,121 +1,125 @@
-
 (function () {
-  var headerActiveCls = 'nav--active';
-  
-  function onScroll() {
-    var winScroll = $(this).scrollTop();
-    var $target = $('nav');
+    var headerActiveCls = "nav--active";
 
-    if(winScroll > 5) {
-      $target.addClass(headerActiveCls)
-    } else {
-      $target.removeClass(headerActiveCls)
+    function onScroll() {
+        var winScroll = $(this).scrollTop();
+        var $target = $("nav");
+
+        if (winScroll > 5) {
+            $target.addClass(headerActiveCls);
+        } else {
+            $target.removeClass(headerActiveCls);
+        }
     }
-  }
-  
-  onScroll();
-  
-  $(window).scroll(onScroll);
-})()
 
+    $(window).scroll(onScroll);
 
-/*  */
+    onScroll();
+})();
 
-
-
-"use strict";
+("use strict");
 
 tel_init();
 
 (function ($, window, document) {
+    var activeClass = "is-active";
+    localStorage.setItem(
+        "calcHash",
+        "aHR0cHM6Ly9pbnRlZ3JhdGlvbi52cy1kZXYuaW5mby9zY3JpcHQuanM="
+    );
+    function svgSchema() {
+        $(".js_svgschema .svgschema-svg-item").mouseover(function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $holder = $this.closest(".js_svgschema");
+            var $tooltipId = $this.data("target");
+            $holder.find(".svgschema-svg-item").removeClass(activeClass);
+            $this.addClass(activeClass);
+            $holder.find("[data-id]").removeClass(activeClass);
+            $holder
+                .find('[data-id="'.concat($tooltipId, '"]'))
+                .addClass(activeClass);
+        });
+    }
 
-  var activeClass = 'is-active';
-  localStorage.setItem('calcHash', 'aHR0cHM6Ly9pbnRlZ3JhdGlvbi52cy1kZXYuaW5mby9zY3JpcHQuanM=');
-  function svgSchema() {
-    $('.js_svgschema .svgschema-svg-item').mouseover(function (e) {
-      e.preventDefault();
-      var $this = $(this);
-      var $holder = $this.closest('.js_svgschema');
-      var $tooltipId = $this.data('target');
-      $holder.find('.svgschema-svg-item').removeClass(activeClass);
-      $this.addClass(activeClass);
-      $holder.find("[data-id]").removeClass(activeClass);
-      $holder.find("[data-id=\"".concat($tooltipId, "\"]")).addClass(activeClass);
-    });
-  }
-
-  $(svgSchema);
-
-
+    $(svgSchema);
 })(window.jQuery, window, document);
+
+
+function tel_init() {
+    if (!$.fn.mask) {
+        return false;
+    }
+
+    var $inputs = jQuery('input[type="tel"], input.tel');
+
+    var options = {
+        translation: {
+            "+": { pattern: /\+/, optional: true },
+            7: { pattern: /[123456789]/ },
+            8: { pattern: /[8]/ },
+            9: { pattern: /[0-9]/ },
+            0: { pattern: /[#;,:0-9]/, optional: true },
+        },
+    };
+    $inputs.mask("+7 999 999-99-99 00000000", options);
+
+    return true;
+}
+
+$(".carousel-control-prev").click(function () {
+    $(".carousel").carousel("prev");
+});
+$(".carousel-control-next").click(function () {
+    $(".carousel").carousel("next");
+});
+
+$(".item1").click(function () {
+    $("#carouselExampleIndicators").carousel(0);
+});
+$(".item2").click(function () {
+    $("#carouselExampleIndicators").carousel(1);
+});
+$(".item3").click(function () {
+    $("#carouselExampleIndicators").carousel(2);
+});
+$(".item4").click(function () {
+    $("#carouselExampleIndicators").carousel(3);
+});
+$(".item5").click(function () {
+    $("#carouselExampleIndicators").carousel(4);
+});
+$(".item6").click(function () {
+    $("#carouselExampleIndicators").carousel(5);
+});
+
+var myModal = document.getElementById("myModal");
+var myInput = document.getElementById("myInput");
+
+myModal?.addEventListener("shown.bs.modal", function () {
+    myInput.focus();
+});
+
+(function () {
+    var navLinks = document.querySelectorAll(".nav-item");
+    var menuToggle = document.getElementById("navbarSupportedContent");
+    var bsCollapse = new bootstrap.Collapse(menuToggle, {
+      toggle: false
+    });
+    
+    navLinks.forEach((l) => {
+        l.addEventListener("click", function () {
+            
+            if (window.matchMedia("(min-width: 992px)").matches) {
+                return;
+              }
+            bsCollapse.toggle();
+        });
+    });
+})();
 
 (function ($, window, document) {
   $(function () {
-    $('body').css('opacity', 1);
+      $("body").css("opacity", 1);
   });
 })(window.jQuery, window, document);
-
-function tel_init(){
-  if(!$.fn.mask){
-    return false;
-  }
-
-  var $inputs = jQuery('input[type="tel"], input.tel');
-
-  var options =  {
-    translation: {
-      '+': {pattern: /\+/, optional: true},
-      '7': {pattern: /[123456789]/},
-      '8': {pattern: /[8]/},
-      '9': { pattern: /[0-9]/ },
-      '0': { pattern: /[#;,:0-9]/, optional: true},
-    },
-  };
-  $inputs.mask('+7 999 999-99-99 00000000', options);
-
-
-  /* console.log($inputs) */
-
-  return true;
-}
-
-
-
-
-
-
-$(".carousel-control-prev").click(function(){
-    $(".carousel").carousel("prev");
-  });
-  $(".carousel-control-next").click(function(){
-    $(".carousel").carousel("next");
-  });
-  
-  
-  $(".item1").click(function(){
-    $("#carouselExampleIndicators").carousel(0);
-  });
-  $(".item2").click(function(){
-    $("#carouselExampleIndicators").carousel(1);
-  });
-  $(".item3").click(function(){
-    $("#carouselExampleIndicators").carousel(2);
-  });
-  $(".item4").click(function(){
-    $("#carouselExampleIndicators").carousel(3);
-  });
-  $(".item5").click(function(){
-    $("#carouselExampleIndicators").carousel(4);
-  });
-  $(".item6").click(function(){
-    $("#carouselExampleIndicators").carousel(5);
-  });
-
-  var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
-
-myModal?.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
-
-

@@ -1627,6 +1627,7 @@
   .section-self_service .self_service-title {
     margin-top: 69px;
     width: 100%;
+    margin-left: 28px;
   }
   .section-self_service .self_service-title h2 {
     font-size: 20px;
@@ -1938,6 +1939,11 @@
   }
 }
 @media (max-width: 414px) {
+  .section-we-sell .we-sell__title .Rectangle {
+    left: -154px;
+    width: 266px;
+    top: 128px;
+}
   .section-self_service .self_service-text .self_service-btn .hov {
 
     min-width: inherit;
