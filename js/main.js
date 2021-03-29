@@ -1,4 +1,22 @@
 
+(function () {
+  var headerActiveCls = 'nav--active';
+  
+  function onScroll() {
+    var winScroll = $(this).scrollTop();
+    var $target = $('nav');
+
+    if(winScroll > 5) {
+      $target.addClass(headerActiveCls)
+    } else {
+      $target.removeClass(headerActiveCls)
+    }
+  }
+  
+  onScroll();
+  
+  $(window).scroll(onScroll);
+})()
 
 "use strict";
 

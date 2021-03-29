@@ -112,10 +112,11 @@
   padding: 10px;
  
 }
-
-
 }
 @media (max-width: 1024px){
+  .section-car .car__slider .carousel .carousel-inner .carousel-item .item-img {
+    height: 222px;
+}
   .section-order .order__content {
      margin-top: 0; 
     max-height: 474px;
@@ -669,6 +670,9 @@
   }
 }
 @media (max-width: 768px) {
+  .section-self_service .self_service-text .self_service-btn .btn {
+    width: 100%;
+  }
   .modal-characteristics .modal-dialog .modal-body form {
     max-width: 260px;
     
@@ -1882,15 +1886,48 @@
   }
 }
 @media (max-width: 375px){
+  .section-info .sub__info .sub__info-text ol li {
+    margin: 22px 0px;
+}
+.section-info .sub__info .sub__info-title {
+  justify-content: space-between;
+}
 .section-equipment .equipment-content .equipment-content-img img {
     margin-left: 30px;
     
+}
+.section-info .sub__info .sub__info-text ul li {
+  margin: 16px 0;
+}
+.section-car .car__slider-mobile .carousel .carousel-inner .carousel-item .item-text {
+  padding: 15px;
+  
+}
+.section-car .car__slider-mobile .carousel .carousel-inner .carousel-item .item-text p {
+  margin: 2px;
+}
+.section-car .car__slider-mobile .carousel .carousel-inner .carousel-item .item-text {
+  max-width: 120px;
+}
+.section-questions .accordion .accordion-button.collapsed {
+  text-align: left;
+}
+.section-foundation .foundation__img .foundation__img-txt {
+  margin: 56px 0 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-we-sell .slider-mobile .slide .carousel-indicators {
+  bottom: -60px;
+ 
 }
 .section-specialist .specialist-box {
   height: 860px;
   padding: 30px 20px;
   margin-bottom: 0;
 }
+
 }
 @media (max-width: 360px){
 
@@ -1959,7 +1996,16 @@
 .section-we-sell .we-sell__title .Rectangle {
   left: -195px;
     width: 350px;
-    top: 158px;
+    top: 175px;
+}
+.section-we-sell .slider-mobile {
+  margin-bottom: 110px;
+}
+.section-calculator {
+  padding: 50px 0 50px 0;
+}
+.section-order {
+  padding: 50px 0 20px 0;
 }
 .section-foundation .foundation__title .foundation__content h3 {
   margin-left: 17px;

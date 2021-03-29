@@ -39,6 +39,12 @@ img {
 section {
   padding: 50px 0;
 }
+.btn-secondary {
+   color: #fff; 
+  background-color: inherit; 
+   border-color: none; 
+   border: none;
+}
 .card-bg {
   width: 100%;
   height: 250px;
@@ -230,6 +236,23 @@ section {
 }
 
 .header {
+  nav {
+    &.nav--active {
+      color: black;
+      background: #fff;
+      .navbar-nav .nav-link {
+        color: #000;
+      }
+      form a {
+        color: black;
+      }
+      .navbar-light .navbar-brand  {
+        .logo1 {
+          display: none;
+        }
+      }
+    }
+  }
   .navbar-light .navbar-toggler {
     border: none;
     span {
@@ -1098,7 +1121,6 @@ section {
     margin-top: 70px;
     margin-bottom: 50px;
     .slide {
-      
       .card-img,
       .card-img-top {
         width: 340px;
@@ -1176,7 +1198,7 @@ section {
       } */
       .carousel-item {
         .card {
-          button{
+          button {
             border: none;
             background: initial;
           }
@@ -2024,23 +2046,21 @@ section {
     }
   }
   .accordion {
-.accordion-item{
-  border-bottom: 1px solid $DGray;
-  &:last-child{
-    border-bottom: none;
-  }
-}
-    
+    .accordion-item {
+      border-bottom: 1px solid $DGray;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
     .accordion-collapse {
       border: none;
       border-width: 0 1px;
     }
     .accordion-button {
-      
       box-shadow: unset;
     }
     .accordion-button.collapsed {
-      
       border-bottom-width: 0;
     }
     .accordion-button:not(.collapsed) {
