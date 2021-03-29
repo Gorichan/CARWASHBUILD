@@ -10,6 +10,9 @@
   }
 }
 @media (max-width: 1450px) {
+  .header form a {
+    margin-right: 20px;
+}
   .section-info .info__bg {
     left: -205px;
     bottom: -1%;
@@ -19,6 +22,11 @@
     top: -30%;
     right: -200px;
   }
+}
+@media (max-width: 1318px){
+  .header form a {
+    margin-right: 8px;
+}
 }
 @media (max-width: 1300px) {
   .section-info .info__bg {
@@ -36,6 +44,15 @@
     font-size: 13px;
 }
   
+}
+@media (max-width: 1260px){
+  .header form a {
+    margin-right: 8px;
+}
+.header .navbar-light .navbar-nav .nav-link {
+ 
+  font-size: 12px;
+}
 }
 @media (max-width: 1255px){
   .section-equipment .equipment-content .equipment__title span {
@@ -113,7 +130,17 @@
  
 }
 }
+@media (max-width: 1042px){
+  .header form a {
+    margin-right: 20px;
+}
+}
 @media (max-width: 1024px){
+  .section-self_service .self_service-title span {
+    width: 195px;
+    left: -134px;
+    top: 97px;
+}
   .header form a {
     margin-right: 14px;
 }
@@ -186,6 +213,11 @@
 }
 .section-specialist .specialist-box .specialist__img img {
   right: 8px;
+}
+}
+@media (max-width: 1013px){
+  .header form a {
+    margin-right: 8px;
 }
 }
 @media (max-width: 988px) {
@@ -676,6 +708,11 @@
   }
 }
 @media (max-width: 768px) {
+  .section-self_service .self_service-title span {
+    width: 139px;
+    left: -104px;
+    top: 67px;
+}
   .section-self_service .self_service-text .self_service-btn .btn {
     width: 100%;
   }
@@ -1114,7 +1151,7 @@
   }
   .section-calculator .calculator__title h2 {
     font-size: 28px;
-    text-align: center;
+    text-align: left;
   }
   .section-calculator .calculator__title {
     margin-bottom: 40px;
@@ -1709,7 +1746,7 @@
   }
   .section-calculator .calculator__title h2 {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
   }
   .section-calculator .calculator__title {
     margin-bottom: 40px;
@@ -1896,6 +1933,16 @@
   }
 }
 @media (max-width: 414px) {
+  .section-self_service .self_service-text .self_service-btn .hov {
+
+    min-width: inherit;
+    
+}
+  .section-calculator .calculator__title span {
+    width: 85px;
+    left: -72px;
+    top: 42px;
+}
   .section-foundation .foundation__title span {
     left: -70px;
     top: 62px;
@@ -1909,6 +1956,24 @@
 
 }
 @media (max-width: 375px){
+  .section-self_service .self_service-text .self_service-btn .hov {
+
+    min-width: inherit;
+    
+}
+
+  .section-foundation .foundation__btn .hov {
+    font-size: 17px;
+    min-width: 346px;
+}
+  .section-foundation .foundation__btn .hov::after {
+    margin: 2px 12px;
+  }
+  .section-calculator .calculator__title span {
+    width: 85px;
+    left: -72px;
+    top: 42px;
+}
   .section-foundation .foundation__title span {
     left: -69px;
     top: 63px;
@@ -1962,7 +2027,7 @@
   align-items: center;
 }
 .section-we-sell .slider-mobile .slide .carousel-indicators {
-  bottom: -60px;
+  bottom: -40px;
  
 }
 .section-specialist .specialist-box {
@@ -1973,6 +2038,11 @@
 
 }
 @media (max-width: 360px){
+  .section-calculator .calculator__title span {
+    width: 111px; 
+    left: -84px;
+    top: 54px;
+}
   .section-foundation .foundation__btn .hov {
     outline: none;
     border: none;
@@ -2151,6 +2221,16 @@
 
 }
 @media (max-width: 320px) {
+  .section-we-sell .we-sell__title .Rectangle {
+    left: -195px;
+    width: 349px;
+    top: 173px;
+}
+  .section-calculator .calculator__title span {
+    width: 111px; 
+    left: -84px;
+    top: 54px;
+}
   .section-foundation .foundation__btn .hov {
     font-size: 13px;
     display: flex;

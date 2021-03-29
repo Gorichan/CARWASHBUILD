@@ -205,8 +205,7 @@ section {
           list-style: none;
           li {
             font-weight: 500;
-            margin: 16px 0;
-            font-size: 14px;
+            font-size: 13px;
             color: $DGrey;
             position: relative;
             &::before {
@@ -1004,9 +1003,27 @@ section {
 }
 
 .section-self_service {
+  
   .self_service-title {
-    margin-top: 60px;
-
+    position: relative;
+    margin-left: 43px;
+    span{
+      display: block;
+      height: 10px;
+      background: #421dd6;
+      width: 168px;
+      -webkit-transform: rotate(
+  -90deg
+  );
+      transform: rotate(
+  -90deg
+  );
+      position: absolute;
+      left: -122px;
+      top: 84px;
+    }
+    
+}
     h2 {
       font-weight: bold;
       font-size: 34px;
@@ -1020,7 +1037,7 @@ section {
 
       color: $Black;
     }
-  }
+  
   .self_service-img {
     margin-top: 60px;
   }
@@ -1070,6 +1087,7 @@ section {
 
         color: $Blue;
         display: flex;
+        min-width: 390px;
         &:hover {
           color: #6c51d7;
         }
@@ -1100,7 +1118,7 @@ section {
       transform: rotate(-90deg);
       position: absolute;
       left: -157px;
-      top: 115px;
+      top: 113px;
     }
     h2 {
       font-weight: bold;
@@ -1522,7 +1540,24 @@ section {
 .section-calculator {
   padding: 0 0 100px 0;
   .calculator__title {
+    position: relative;
     margin-bottom: 55px;
+    margin-left: 23px;
+    span{
+      display: block;
+    height: 10px;
+    background: #421dd6;
+    width: 67px;
+    -webkit-transform: rotate(
+-90deg
+);
+    transform: rotate(
+-90deg
+);
+    position: absolute;
+    left: -53px;
+    top: 35px;
+    }
     h2 {
       color: $Black;
       font-weight: bold;

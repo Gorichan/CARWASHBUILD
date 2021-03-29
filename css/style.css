@@ -252,8 +252,7 @@ section {
 
 .modal-characteristics .modal-dialog .modal-body .characteristics-content .characteristics-content-txt ul li {
   font-weight: 500;
-  margin: 16px 0;
-  font-size: 14px;
+  font-size: 13px;
   color: #5e5e5e;
   position: relative;
 }
@@ -1299,16 +1298,29 @@ section {
 }
 
 .section-self_service .self_service-title {
-  margin-top: 60px;
+  position: relative;
+  margin-left: 43px;
 }
 
-.section-self_service .self_service-title h2 {
+.section-self_service .self_service-title span {
+  display: block;
+  height: 10px;
+  background: #421dd6;
+  width: 168px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -122px;
+  top: 84px;
+}
+
+.section-self_service h2 {
   font-weight: bold;
   font-size: 34px;
   color: #000000;
 }
 
-.section-self_service .self_service-title p {
+.section-self_service p {
   margin-top: 24px;
   font-weight: 500;
   font-size: 20px;
@@ -1380,6 +1392,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 390px;
 }
 
 .section-self_service .self_service-text .self_service-btn .hov:hover {
@@ -1413,7 +1426,7 @@ section {
           transform: rotate(-90deg);
   position: absolute;
   left: -157px;
-  top: 115px;
+  top: 113px;
 }
 
 .section-we-sell .we-sell__title h2 {
@@ -1895,7 +1908,21 @@ section {
 }
 
 .section-calculator .calculator__title {
+  position: relative;
   margin-bottom: 55px;
+  margin-left: 23px;
+}
+
+.section-calculator .calculator__title span {
+  display: block;
+  height: 10px;
+  background: #421dd6;
+  width: 67px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -53px;
+  top: 35px;
 }
 
 .section-calculator .calculator__title h2 {

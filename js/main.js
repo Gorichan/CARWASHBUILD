@@ -16,7 +16,11 @@
   onScroll();
   
   $(window).scroll(onScroll);
+  
 })()
+
+
+
 
 "use strict";
 
