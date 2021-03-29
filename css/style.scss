@@ -170,9 +170,11 @@ section {
     }
   }
   .modal-body {
+    
     flex-direction: unset !important;
     form {
       max-width: 260px;
+      margin-top: -10px;
       input {
         width: 100% !important;
       }

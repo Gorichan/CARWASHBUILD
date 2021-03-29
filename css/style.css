@@ -208,6 +208,7 @@ section {
 
 .modal-characteristics .modal-dialog .modal-body form {
   max-width: 260px;
+  margin-top: -10px;
 }
 
 .modal-characteristics .modal-dialog .modal-body form input {
