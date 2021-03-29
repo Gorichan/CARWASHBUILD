@@ -1147,6 +1147,7 @@
   .section-order .order__content {
     margin-top: -20px;
     max-height: 600px;
+    margin-bottom: 0;
 }
   
   .section-car {
@@ -1312,6 +1313,12 @@
 
 }
 @media (max-width: 480px) {
+  .section-info .sub__info .sub__info-text .sub__info-btn span {
+    font-size: 20px;
+}
+.section-info .sub__info .sub__info-text .sub__info-btn h2 {
+  font-size: 35px;
+}
   
   .section-self_service .self_service-text .self_service-btn {
    width: 100%; 
@@ -1440,7 +1447,7 @@
     margin-top: 90px;
 }
   .section-info .info__text {
-    margin: 30px auto;
+    margin: 30px 15px;
     width: 280px;
   }
   .section-info .info__text p {
@@ -1464,7 +1471,6 @@
   }
   .section-info .sub__info .sub__info-text .sub__info-btn {
     min-height: 0;
-    margin-left: 60px;
   }
   .vertical-line:after {
     content: "";
@@ -1538,7 +1544,7 @@
 }
 .section-self_service .self_service-img {
   margin-top: 60px;
-  margin: 60px 0 0 0;
+  margin: 60px 15px 0 15px;
 }
   .section-foundation .foundation__img .foundation__img-txt p br {
     display: none;
@@ -1886,6 +1892,21 @@
   }
 }
 @media (max-width: 375px){
+  .section-car .car__title span {
+    width: 74px;
+    left: -54px;
+    top: 36px;
+}
+  .section-equipment .equipment-content .equipment__title span {
+    left: -117px;
+    width: 202px;
+    top: 102px;
+}
+  .section-we-sell .we-sell__title .Rectangle {
+    left: -160px;
+    width: 280px;
+    top: 140px;
+}
   .section-info .sub__info .sub__info-text ol li {
     margin: 22px 0px;
 }
@@ -2027,7 +2048,7 @@
   padding: 50px 0 0 0;
 }
 .section-self_service .self_service-img {
-  margin: 20px 0 0 0;
+  margin: 20px 15px 0 15px;
 }
 .section-equipment .equipment-content .equipment-btn .btn-secondary {
   margin: 10px auto;

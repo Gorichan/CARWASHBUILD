@@ -26,6 +26,7 @@ body {
 a {
   text-decoration: none;
   color: $White;
+  cursor: pointer;
   &:hover {
     text-decoration: none;
     color: $White;
@@ -39,18 +40,13 @@ img {
 section {
   padding: 50px 0;
 }
-.btn-secondary {
-   color: #fff; 
-  background-color: inherit; 
-   border-color: none; 
-   border: none;
-}
+
 .card-bg {
   width: 100%;
-  height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  min-height: 250px;
 }
 .wrapper-page {
   overflow: hidden;
@@ -238,6 +234,7 @@ section {
 .header {
   nav {
     &.nav--active {
+      border: 1px solid $DGray;
       color: black;
       background: #fff;
       .navbar-nav .nav-link {
@@ -246,11 +243,18 @@ section {
       form a {
         color: black;
       }
-      .navbar-light .navbar-brand  {
-        .logo1 {
-          display: none;
+      .navbar-brand  {
+        .logo {
+          svg{
+            path.fil {
+              fill: black ;
+          }
+          }
         }
       }
+      .navbar-toggler span {
+        background: #000;  
+    }
     }
   }
   .navbar-light .navbar-toggler {
@@ -1608,9 +1612,9 @@ section {
       .activeCalc {
         color: #421dd6;
         font-weight: 600;
-        font-size: 28px;
+        font-size: 22px;
         display: inline-block;
-        min-width: 40px;
+        /* min-width: 40px; */
         text-align: center;
       }
       .rangeNums {
@@ -1664,7 +1668,7 @@ section {
       }
       p {
         font-weight: 800;
-        font-size: 48px;
+        font-size: 45px;
 
         color: $Blue;
       }
@@ -1720,7 +1724,7 @@ section {
     }
   }
   .order__content {
-    margin-top: -20px;
+    margin-bottom: 50px;
     max-height: 429px;
     ul {
       list-style: none;

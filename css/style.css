@@ -18,6 +18,7 @@ body {
 a {
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 a:hover {
@@ -36,19 +37,12 @@ section {
   padding: 50px 0;
 }
 
-.btn-secondary {
-  color: #fff;
-  background-color: inherit;
-  border-color: none;
-  border: none;
-}
-
 .card-bg {
   width: 100%;
-  height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  min-height: 250px;
 }
 
 .wrapper-page {
@@ -290,6 +284,7 @@ section {
 }
 
 .header nav.nav--active {
+  border: 1px solid #838383;
   color: black;
   background: #fff;
 }
@@ -302,8 +297,12 @@ section {
   color: black;
 }
 
-.header nav.nav--active .navbar-light .navbar-brand .logo1 {
-  display: none;
+.header nav.nav--active .navbar-brand .logo svg path.fil {
+  fill: black;
+}
+
+.header nav.nav--active .navbar-toggler span {
+  background: #000;
 }
 
 .header .navbar-light .navbar-toggler {
@@ -1995,9 +1994,9 @@ section {
 .section-calculator .calculator__range-content .calculator__range .activeCalc {
   color: #421dd6;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 22px;
   display: inline-block;
-  min-width: 40px;
+  /* min-width: 40px; */
   text-align: center;
 }
 
@@ -2070,7 +2069,7 @@ section {
 
 .section-calculator .calculator__soum .calculator__soum-title p {
   font-weight: 800;
-  font-size: 48px;
+  font-size: 45px;
   color: #421dd6;
 }
 
@@ -2138,7 +2137,7 @@ section {
 }
 
 .section-order .order__content {
-  margin-top: -20px;
+  margin-bottom: 50px;
   max-height: 429px;
 }
 
