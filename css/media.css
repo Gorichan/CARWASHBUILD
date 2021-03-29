@@ -136,6 +136,11 @@
 }
 }
 @media (max-width: 1024px){
+  .section-we-sell .we-sell__title .Rectangle {
+    width: 240px;
+    left: -157px;
+    top: 117px;
+}
   .section-self_service .self_service-title span {
     width: 195px;
     left: -134px;
@@ -1956,10 +1961,14 @@
 
 }
 @media (max-width: 375px){
+  .section-calculator .calculator__title {
+    margin-left: 13px;
+}
+  .section-self_service .self_service-title {
+    margin-left: 28px;
+}
   .section-self_service .self_service-text .self_service-btn .hov {
-
-    min-width: inherit;
-    
+    min-width: inherit; 
 }
 
   .section-foundation .foundation__btn .hov {
@@ -1971,7 +1980,7 @@
   }
   .section-calculator .calculator__title span {
     width: 85px;
-    left: -72px;
+    left: -62px;
     top: 42px;
 }
   .section-foundation .foundation__title span {
@@ -2221,6 +2230,16 @@
 
 }
 @media (max-width: 320px) {
+  .section-self_service .self_service-title {
+    margin-top: 69px;
+    margin-left: 12px; 
+    width: 100%;
+}
+  .section-self_service .self_service-title span {
+    width: 139px;
+    left: -88px;
+    top: 67px;
+}
   .section-we-sell .we-sell__title .Rectangle {
     left: -195px;
     width: 349px;
