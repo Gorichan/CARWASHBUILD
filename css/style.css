@@ -347,7 +347,7 @@ section {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  margin-right: 42px;
+  margin-right: 30px;
 }
 
 .header form .bt {
@@ -358,7 +358,6 @@ section {
   border-radius: 4px;
   color: #ffffff !important;
   text-decoration: none;
-  /* font-weight: bold; */
   font-size: 13px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
