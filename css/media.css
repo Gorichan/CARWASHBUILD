@@ -2133,10 +2133,13 @@
 
 }
 @media (max-width: 360px){
+  .section-equipment .equipment-content .equipment__title {
+    margin-left: 0px;
+}
   .section-calculator .calculator__title span {
-    width: 111px; 
-    left: -84px;
-    top: 54px;
+    width: 82px;
+    left: -64px;
+    top: 38px;
 }
   .section-foundation .foundation__btn .hov {
     outline: none;
@@ -2168,7 +2171,7 @@
   
   .section-car .car__title span {
     width: 78px;
-    left: -56px;
+    left: -62px;
     top: 35px;
 }
   .section-info .sub__info .sub__info-text .mt {
@@ -2212,7 +2215,7 @@
   width: 127px;
 }
 .section-we-sell .we-sell__title .Rectangle {
-  left: -163px;
+  left: -160px;
     width: 287px;
     top: 138px;
 }
