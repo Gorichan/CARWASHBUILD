@@ -1639,17 +1639,11 @@
   .section-self_service .self_service-text {
     margin-top: 0;
   }
-  /* .section-self_service .self_service-text ul {
-    padding: 0 16px;
-  } */
+  
   .section-self_service .self_service-text ul li br {
     display: none;
   }
-  .section-self_service .self_service-title {
-    margin-top: 69px;
-    width: 100%;
-    margin-left: 28px;
-  }
+  
   .section-self_service .self_service-title h2 {
     font-size: 20px;
   }
@@ -1960,10 +1954,35 @@
   }
 }
 @media (max-width: 414px) {
+  .section-car .car__title h2 {
+     margin-left: 0; 
+}
+.section-car .car__title p {
+  margin-left: 0; 
+}
+  .section-calculator .calculator__title h2 {
+     margin-left: 0; 
+}
+.section-calculator .calculator__title p {
+  margin-left: 0; 
+}
+  .section-we-sell .we-sell__title {
+    margin-left: 11px;
+}
+  .section-self_service .self_service-title {
+    margin-top: 69px;
+    width: 100%;
+    margin-left: 11px;
+  }
+  .section-self_service .self_service-title span {
+    width: 151px;
+    left: -89px;
+    top: 67px;
+}
   .section-calculator .calculator__title {
     position: relative;
     margin-bottom: 55px;
-    margin-left: 17px;
+    margin-left: 10px;
 }
   .section-we-sell .we-sell__title .Rectangle {
     left: -154px;
@@ -1977,7 +1996,7 @@
 }
   .section-calculator .calculator__title span {
     width: 85px;
-    left: -66px;
+    left: -58px;
     top: 42px;
 }
   .section-foundation .foundation__title span {
