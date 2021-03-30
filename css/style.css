@@ -1930,12 +1930,14 @@ section {
   color: #000000;
   font-weight: bold;
   font-size: 34px;
+  margin-left: 23px;
 }
 
 .section-calculator .calculator__title p {
   font-weight: 500;
   font-size: 20px;
   color: #000000;
+  margin-left: 23px;
 }
 
 .section-calculator .calculator__btn .calculator__btn-title {
@@ -2268,12 +2270,14 @@ section {
   font-weight: bold;
   font-size: 32px;
   color: #000000;
+  margin-left: 18px;
 }
 
 .section-car .car__title p {
   font-weight: 500;
   font-size: 20px;
   color: #000000;
+  margin-left: 18px;
 }
 
 .section-car .car__title span {
