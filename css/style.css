@@ -350,20 +350,30 @@ section {
   margin-right: 42px;
 }
 
-.header form button {
+.header form .bt {
   width: 165px;
   height: 41px;
+  font-weight: 500;
   background: #421dd6;
   border-radius: 4px;
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: none;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 13px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header form button:hover {
+.header form .bt:hover {
   background: #6c51d7;
   color: #ffffff;
 }
