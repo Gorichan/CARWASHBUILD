@@ -856,7 +856,6 @@ section {
 
 .section-info .sub__info .sub__info-text .list-info {
   min-height: 335px;
-  margin-bottom: 45px;
 }
 
 .section-info .sub__info .sub__info-text ol {
@@ -979,7 +978,7 @@ section {
 .section-info .sub__info .sub__info-text .sub__info-btn a::after {
   content: url(../img/svg/arrow-info.svg);
   display: inline-block;
-  margin: 2px 24px;
+  margin: 2px 20px;
   -webkit-transition: 0.25s linear;
   transition: 0.25s linear;
 }
@@ -2104,6 +2103,12 @@ section {
   font-weight: 800;
   font-size: 45px;
   color: #421dd6;
+}
+
+.section-calculator .calculator__soum .calculator__soum-title span {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
 }
 
 .section-calculator .calculator__soum-content-box {

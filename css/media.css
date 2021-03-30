@@ -136,6 +136,9 @@
 }
 }
 @media (max-width: 1024px){
+  .section-calculator .calculator__soum .calculator__soum-title span {
+    font-size: 17px;
+}
   .section-calculator .calculator__title h2 {
     margin-left: 17px;
 }
@@ -1964,6 +1967,9 @@
   }
 }
 @media (max-width: 414px) {
+  .section-calculator .calculator__soum .calculator__soum-title span {
+    font-size: 19px; 
+}
   .section-car .car__title h2 {
      margin-left: 0; 
 }
@@ -2022,6 +2028,9 @@
 
 }
 @media (max-width: 375px){
+  .section-calculator .calculator__soum .calculator__soum-title span {
+    font-size: 17px;
+}
   .section-calculator .calculator__title h2 {
      margin-left: 0; 
 }
@@ -2133,6 +2142,11 @@
 
 }
 @media (max-width: 360px){
+  .section-calculator .calculator__soum .calculator__soum-title span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+}
   .section-equipment .equipment-content .equipment__title {
     margin-left: 0px;
 }
@@ -2319,6 +2333,9 @@
 
 }
 @media (max-width: 320px) {
+  .section-calculator .calculator__soum .calculator__soum-title span {
+    font-size: 14px;
+}
   .section-car .car__title span {
     width: 78px;
     left: -62px;

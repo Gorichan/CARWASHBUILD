@@ -631,7 +631,7 @@ section {
       text-align: left;
       .list-info {
         min-height: 335px;
-        margin-bottom: 45px;
+        
       }
       ol {
         list-style: none;
@@ -726,7 +726,7 @@ section {
           &::after {
             content: url(../img/svg/arrow-info.svg);
             display: inline-block;
-            margin: 2px 24px;
+            margin: 2px 20px;
             transition: 0.25s linear;
           }
           &:hover::after {
@@ -1713,6 +1713,11 @@ section {
         font-size: 45px;
 
         color: $Blue;
+      }
+      span{
+        font-weight: 500;
+font-size: 20px;
+color: $Black;
       }
     }
   }
