@@ -1422,7 +1422,7 @@ section {
   display: block;
   height: 10px;
   background: #421dd6;
-  width: 235px;
+  width: 233px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: absolute;
@@ -2039,7 +2039,7 @@ section {
       justify-content: space-around;
   font-size: 20px;
   margin-right: -10px;
-  width: 586px;
+  max-width: 586px;
 }
 
 .section-calculator .calculator__radio-content .calculator__radio-title {
@@ -2280,12 +2280,12 @@ section {
   display: block;
   height: 10px;
   background: #421dd6;
-  width: 86px;
+  width: 63px;
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   position: absolute;
-  left: -70px;
-  top: 33px;
+  left: -54px;
+  top: 31px;
 }
 
 .section-car .car__box {

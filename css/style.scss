@@ -1116,7 +1116,7 @@ section {
       display: block;
       height: 10px;
       background: $Blue;
-      width: 235px;
+      width: 233px;
       transform: rotate(-90deg);
       position: absolute;
       left: -157px;
@@ -1661,7 +1661,7 @@ section {
         justify-content: space-around;
         font-size: 20px;
         margin-right: -10px;
-        width: 586px;
+        max-width: 586px;
       }
     }
   }
@@ -1848,13 +1848,18 @@ section {
     }
     span {
       display: block;
-      height: 10px;
-      background: $Blue;
-      width: 86px;
-      transform: rotate(-90deg);
-      position: absolute;
-      left: -70px;
-      top: 33px;
+    height: 10px;
+    background: #421dd6;
+    width: 63px;
+    -webkit-transform: rotate(
+-90deg
+);
+    transform: rotate(
+-90deg
+);
+    position: absolute;
+    left: -54px;
+    top: 31px;
     }
   }
   .car__box {
