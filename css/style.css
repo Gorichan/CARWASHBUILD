@@ -2115,6 +2115,12 @@ section {
   min-height: 210px;
 }
 
+.section-calculator .calculator__soum-content-box .note p {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
 .section-calculator .calculator__soum-content {
   display: -webkit-box;
   display: -ms-flexbox;

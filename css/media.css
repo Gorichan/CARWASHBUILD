@@ -335,12 +335,7 @@
     border: none;
   }
   .header {
-    padding: 15px 0 00;
-    background-image: url(../img/bg-hed-min.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
+    padding: 15px 0 0 0;
   }
   .navbar-light .navbar-brand {
     width: 200px;
@@ -894,11 +889,7 @@
     border: none;
   }
   .header {
-    padding: 15px 0 00;
-    background-image: url(../img/bg-hed-min.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 15px 0 0 0;
     color: #ffffff;
   }
   .navbar-light .navbar-brand {
@@ -1418,7 +1409,6 @@
 }
   .header {
     padding: 15px 0 00;
-    background-image: url(../img/bg-hed-min.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2333,6 +2323,9 @@
 
 }
 @media (max-width: 320px) {
+  .form-range {
+    padding: 0;
+}
   .section-calculator .calculator__soum .calculator__soum-title span {
     font-size: 14px;
 }
@@ -2342,7 +2335,7 @@
     top: 35px;
 }
   .section-equipment .equipment-content .equipment__title span {
-    left: -142px;
+    left: -133px;
     width: 234px;
     top: 116px;
 }
@@ -2357,9 +2350,9 @@
     top: 67px;
 }
   .section-we-sell .we-sell__title .Rectangle {
-    left: -210px;
-    width: 372px;
-    top: 184px;
+    left: -191px;
+    width: 348px;
+    top: 173px;
 }
   .section-calculator .calculator__title span {
     width: 111px; 

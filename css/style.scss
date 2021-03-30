@@ -1723,6 +1723,13 @@ color: $Black;
   }
   .calculator__soum-content-box {
     min-height: 210px;
+    .note{
+      p{
+        font-weight: 500;
+font-size: 12px;
+margin-bottom: 30px;
+      }
+    }
   }
   .calculator__soum-content {
     display: flex;
