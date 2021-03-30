@@ -136,6 +136,9 @@
 }
 }
 @media (max-width: 1024px){
+  .section-order .order__content ul li {
+    margin: 28px 0;
+}
   .section-we-sell .we-sell__title .Rectangle {
     width: 240px;
     left: -157px;
@@ -155,6 +158,7 @@
   .section-order .order__content {
      margin-top: 0; 
     max-height: 474px;
+    margin-top: 45px;
 }
   .section-info .sub__info .sub__info-text .sub__info-btn {
     min-height: 105px;
